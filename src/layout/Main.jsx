@@ -1,15 +1,102 @@
-import { Outlet } from 'react-router-dom';
-import Header from '../pages/Share/Header/Header';
-import Footer from '../pages/Share/Footer/Footer';
+import { FaHome, FaPlus, FaSearch } from "react-icons/fa";
+import { RiLogoutBoxFill } from "react-icons/ri";
+import { Link, Outlet } from "react-router-dom";
 
 const Main = () => {
-    return (
-        <div className="w-full bg-[#424242]">
-            <Header/>
-            <Outlet></Outlet>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className="drawer lg:drawer-open bg-[#424242]">
+      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col items-center justify-center">
+        {/* Page content here */}
+        <Outlet></Outlet>
+      </div>
+
+      
+      <div className="drawer-side p-2">
+        <label
+          htmlFor="my-drawer-2"
+          aria-label="close sidebar"
+          className="drawer-overlay"
+        ></label>
+          {/* Sidebar content here */}
+          <div className="bg-[#424242]">
+            {/* First Section */}
+            <div className="mb-4 p-5 rounded-lg bg-[#1E1C1A]">
+              <div className="flex items-center mb-4">
+                <h1 className="text-white text-2xl">Epicure</h1>
+              </div>
+
+              <Link to="/">
+              <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
+                <FaHome className="w-6 h-6 mr-2 text-white" />
+                <button className="flex items-center text-white  px-4 py-2 ">
+                  Home
+                </button>
+              </div>
+              </Link>
+
+              <Link to="/search">
+              <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
+                <FaSearch className="w-6 h-6 mr-2 text-white" />
+                <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                  Search
+                </button>
+              </div>
+              </Link>
+
+              <div className="flex items-center">
+                <RiLogoutBoxFill className="w-6 h-6 mr-2" />
+                <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                  Log out
+                </button>
+              </div>
+            </div>
+
+            {/* Second Section */}
+            <div className="mb-4 p-5 rounded-lg bg-[#1E1C1A]">
+              <div className="flex items-center mb-4">
+                <span className="text-lg font-bold">Your Cookbooks</span>
+              </div>
+              <div className="flex items-center mb-4">
+                <FaPlus className="w-6 h-6 mr-2" />
+                <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                  Add Cookbook
+                </button>
+              </div>
+              <div className="flex flex-col">
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+                  Favourites
+                </button>
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+                  Book-2
+                </button>
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg">
+                  Book-3
+                </button>
+              </div>
+            </div>
+
+            {/* Third Section */}
+            <div className="p-5 rounded-lg bg-[#1E1C1A]">
+              <div className="flex items-center mb-4 ">
+                <span className="text-lg font-bold">Your Chefs</span>
+              </div>
+              <div className="flex flex-col">
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+                  Chef-1
+                </button>
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+                  Chef-2
+                </button>
+                <button className="text-white bg-[#272727] px-4 py-2 rounded-lg">
+                  Chef-3
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  );
 };
 
 export default Main;
