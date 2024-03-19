@@ -20,79 +20,84 @@ const Search = () => {
           </h1>
         </div>
 
-        
+        <div className="flex flex-col gap-24">
+          {/* Search bar */}
+          <div className=" ml-16 relative">
+            <input
+              type="text"
+              placeholder=" "
+              className="w-[62%] h-10 rounded-lg text-black bg-white bg-transparent border-b-2 border-white outline-none pl-4 pr-10" // Added padding for the icon
+            />
+            <div className="absolute inset-y-0 right-[40%] flex items-center mr-4">
+              <FaSearch className="h-6 w-6 text-gray-400" />
+            </div>
 
-        {/* Top 10 Images */}
-        <div className="text-white text-lg ml-16">
-            {/* Search bar */}
-        
-        <div className="">
-          <input
-            type="text"
-            placeholder="Search"
-            className="w-[62%] h-10 rounded-lg text-black bg-white bg-transparent border-b-2 border-white outline-none pl-4 pr-10" // Added padding for the icon
-          />
-          
-        </div>
-
-          <div className="mb-8">
-            <div className="flex gap-10 mt-4">
-              <img
-                src={top10Img1}
-                alt="Image 1"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={top10Img2}
-                alt="Image 2"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={top10Img3}
-                alt="Image 3"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={top10Img4}
-                alt="Image 4"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={top10Img5}
-                alt="Image 5"
-                className="w-[133px] h-[128px]"
-              />
+            <div className="absolute inset-y-0 right-[45%] flex items-center ml-4 text-gray-400">
+              <span>Search</span>
             </div>
           </div>
 
-          {/* Last Search Images */}
-          <div className="mt-[160px]">
-            <div className="flex gap-10 mt-4">
-              <img
-                src={lastSearch1}
-                alt="Image 6"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={lastSearch2}
-                alt="Image 7"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={lastSearch3}
-                alt="Image 8"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={lastSearch4}
-                alt="Image 9"
-                className="w-[133px] h-[128px] mr-4"
-              />
-              <img
-                src={top10Img5}
-                alt="Image 10"
-                className="w-[133px] h-[128px]"
-              />
+          {/* image section */}
+          <div className="text-white text-lg ml-16">
+            <div className="mb-8">
+              <div className="flex gap-10 mt-4">
+                <img
+                  src={top10Img1}
+                  alt="Image 1"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={top10Img2}
+                  alt="Image 2"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={top10Img3}
+                  alt="Image 3"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={top10Img4}
+                  alt="Image 4"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={top10Img5}
+                  alt="Image 5"
+                  className="w-[133px] h-[128px]"
+                />
+              </div>
+            </div>
+
+            {/* Last Search Images */}
+            <div className="mt-[160px]">
+              <div className="flex gap-10 mt-4">
+                <img
+                  src={lastSearch1}
+                  alt="Image 6"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={lastSearch2}
+                  alt="Image 7"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={lastSearch3}
+                  alt="Image 8"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={lastSearch4}
+                  alt="Image 9"
+                  className="w-[133px] h-[128px] mr-4"
+                />
+                <img
+                  src={top10Img5}
+                  alt="Image 10"
+                  className="w-[133px] h-[128px]"
+                />
+              </div>
             </div>
           </div>
         </div>
