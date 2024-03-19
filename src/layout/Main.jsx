@@ -83,7 +83,7 @@ const Main = () => {
             </div>
 
             {/* Third Section */}
-            <div className="h-[396px] p-5 rounded-lg bg-[#1E1C1A]">
+            <div className=" p-5 rounded-lg bg-[#1E1C1A]">
               <div className="flex gap-2 items-center mb-4 ">
               <LuChefHat className="text-[#BE6F50] text-xl"/>
                 <span className="text-lg font-bold text-white">Your Chefs</span>
