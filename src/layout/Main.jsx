@@ -3,8 +3,16 @@ import { RiLogoutBoxFill } from "react-icons/ri";
 import { Link, Outlet } from "react-router-dom";
 import { ImBooks } from "react-icons/im";
 import { LuChefHat } from "react-icons/lu";
+import { BiSolidLogIn } from "react-icons/bi";
+import { useState } from "react";
 
 const Main = () => {
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false); // Default user is logged in
+
+  // Function to toggle user login status
+  const toggleUserLogin = () => {
+    setIsUserLoggedIn(!isUserLoggedIn);
+  };
   return (
     <div className="drawer sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -13,7 +21,9 @@ const Main = () => {
         <Outlet></Outlet>
       </div>
 
-      <div className="drawer-side p-2 md:block"> {/* Show sidebar for md and above */}
+      <div className="drawer-side p-2 md:block">
+        {" "}
+        {/* Show sidebar for md and above */}
         <label
           htmlFor="my-drawer-2"
           aria-label="close sidebar"
@@ -46,10 +56,28 @@ const Main = () => {
             </Link>
 
             <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
-              <RiLogoutBoxFill className="w-6 h-6 mr-2 text-[#BE6F50]" />
-              <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
-                Log out
-              </button>
+              {/* Other content */}
+              {/* Render login/logout button */}
+              <div className="flex items-center px-2 bg-[#272727] rounded-lg">
+                {/* Function to render login or logout button based on user login status */}
+                {isUserLoggedIn ? (
+                  // User is logged in, render logout button
+                  <div className="flex justify-center items-center">
+                    <RiLogoutBoxFill className="w-6 h-6 mr-2 text-[#BE6F50]" />
+                    <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                      Log out
+                    </button>
+                  </div>
+                ) : (
+                  // User is not logged in, render login button
+                  <div className="flex justify-center items-center">
+                    <BiSolidLogIn className="w-6 h-6 mr-2 text-[#BE6F50]" />
+                    <Link to="/login"><button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                      LogIn
+                    </button></Link>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
