@@ -1,9 +1,8 @@
-import { useState } from "react";
-import { FaGoogle } from "react-icons/fa";
+import { useState } from 'react';
+import { FaGoogle } from 'react-icons/fa';
 
-
-const SignUp = () => {
-  // State variables for name, email, and password
+const CreatorSignUp = () => {
+     // State variables for name, email, and password
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,8 +17,8 @@ const SignUp = () => {
     console.log("Password:", password);
   };
 
-  return (
-    <div className="w-full h-full font-syne grid grid-cols-2">
+    return (
+        <div className="w-full h-full font-syne grid grid-cols-2">
       {/* Left side: Logo and Tagline */}
       <div className="flex flex-col justify-center gap-10 p-10 bg-[#BE6F50]">
         <h1 className="text-[60px] text-white font-bold">Epicure</h1>
@@ -30,7 +29,7 @@ const SignUp = () => {
       <div className="grid items-center bg-[#1F1D1C]">
         <div className="max-w-md mx-auto mt-8 p-6">
           {/* Form title */}
-          <h2 className="text-2xl text-white font-bold mb-4">Sign Up</h2>
+          <h2 className="text-2xl text-white font-bold mb-4">Sign up as content creator</h2>
           <form onSubmit={handleSubmit} className="w-[400px]">
             {/* Name input */}
             <div className="mb-4">
@@ -84,7 +83,7 @@ const SignUp = () => {
             <p className="text-white text-center mt-5">Already have an account? <a href="/login" className="underline text-[#BE6F50]">Log in</a> here</p>
 
             {/* Link to Content Creator page */}
-            <p className="text-white text-center mt-5">Chef? <a href="/creatorSignup" className="underline text-[#BE6F50]">Sign up as content creator </a> here</p>
+            <p className="text-white text-center mt-5">User? <a href="/signup" className="underline text-[#BE6F50]">Sign up as a user  </a> here</p>
 
 
           </form>
@@ -97,7 +96,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default SignUp;
+export default CreatorSignUp;
