@@ -84,7 +84,7 @@ const Main = () => {
           </div>
 
           {/* Second Section */}
-          <div className="p-5 rounded-lg bg-[#1E1C1A]">
+          <div className="p-4 rounded-lg bg-[#1E1C1A]">
       <div className="flex items-center mb-4 gap-5 text-white">
         <div className="flex gap-2 items-center">
           <ImBooks className="text-xl text-[#BE6F50]" />
@@ -93,7 +93,7 @@ const Main = () => {
         <FaPlus className="w-5 h-5" />
       </div>
       {/* Container for the scrollable part */}
-      <div className="overflow-y-auto max-h-[180px]">
+      <div className="overflow-y-auto md:max-h-[180px] ">
         <div className="flex flex-col gap-3">
           <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
             favorites
@@ -129,7 +129,7 @@ const Main = () => {
               <LuChefHat className="text-[#BE6F50] text-xl" />
               <span className="text-lg font-bold text-white">Your Chefs</span>
             </div>
-            <div className="overflow-y-auto max-h-[130px]">
+            <div className="overflow-y-auto md:max-h-[145px]">
             <div className="flex flex-col gap-3 ">
               <button className="text-white bg-[#272727] px-4 rounded-lg ">
                 Chef-1
