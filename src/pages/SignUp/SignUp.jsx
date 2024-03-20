@@ -20,7 +20,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="w-full h-full font-syne grid grid-cols-2">
+    <div className="w-full h-full my-3 font-syne  grid grid-cols-2">
       {/* Left side: Logo and Tagline */}
       <div className="flex flex-col justify-center gap-10 p-10 bg-[#BE6F50]">
         <h1 className="text-[60px] text-white font-bold">Epicure</h1>

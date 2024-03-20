@@ -41,7 +41,7 @@ const Search = () => {
             </div>
           </div>
           
-              <div className="grid sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
                 <img
                   src={top10Img1}
                   alt="Image 1"
@@ -70,7 +70,7 @@ const Search = () => {
               </div>
               {/* Last Search Images */}
             <div className="">
-              <div className="grid sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
                 <img
                   src={lastSearch1}
                   alt="Image 6"

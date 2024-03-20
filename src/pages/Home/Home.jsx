@@ -21,7 +21,7 @@ const Home = () => {
             {/* Top 10 Section */}
           <div className="mb-8">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>
-            <div className="grid sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5  mt-4">
+            <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5  mt-4">
               <img src={top10Img1} alt="Image 1" className="w-[133px] h-[128px] mr-4" />
               <img src={top10Img2} alt="Image 2" className="w-[133px] h-[128px] mr-4" />
               <img src={top10Img3} alt="Image 3" className="w-[133px] h-[128px] mr-4" />
@@ -33,7 +33,7 @@ const Home = () => {
           {/* Last Search Section */}
           <div className="mt-[160px]">
             <h2 className="text-[30.67px] font-bold text-white">Last Search</h2>
-            <div className="grid sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
+            <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
               <img src={lastSearch1} alt="Image 5" className="w-[133px] h-[128px] mr-4" />
               <img src={lastSearch2} alt="Image 6" className="w-[133px] h-[128px] mr-4" />
               <img src={lastSearch3} alt="Image 7" className="w-[133px] h-[128px] mr-4" />
