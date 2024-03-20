@@ -81,10 +81,10 @@ const SignUp = () => {
 
 
             {/* Link to login page */}
-            <p className="text-white text-center mt-5">Already have an account? <a href="/login" className="underline text-[#BE6F50]">Log in</a> here</p>
+            <p className="text-white text-center mt-5">Already have an account? <a href="/login" className="underline text-[#BE6F50]">Log in</a> </p>
 
             {/* Link to Content Creator page */}
-            <p className="text-white text-center mt-5">Chef? <a href="/creatorSignup" className="underline text-[#BE6F50]">Sign up as content creator </a> here</p>
+            <p className="text-white text-center mt-5">Chef? <a href="/creatorSignup" className="underline text-[#BE6F50]">Sign up as content creator </a> </p>
 
 
           </form>

@@ -64,7 +64,7 @@ const Login = () => {
               Log in
             </button>
             {/* Link to signup page */}
-            <p className="text-white text-center mt-5">Don't have an account? <a href="/signup" className="underline text-[#BE6F50]">Sign up</a> here</p>
+            <p className="text-white text-center mt-5">Don't have an account? <a href="/signup" className="underline text-[#BE6F50]">Sign up</a> </p>
           </form>
           {/* Login with Google button */}
           <button className="mt-10 w-full flex items-center justify-center text-white bg-[#BE6F50] py-2 px-4 rounded-full hover:bg-[#8F8F8F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
