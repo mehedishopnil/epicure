@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CreatorSignUp = () => {
      // State variables for name, email, and password
@@ -80,11 +81,12 @@ const CreatorSignUp = () => {
 
 
             {/* Link to login page */}
-            <p className="text-white text-center mt-5">Already have an account? <a href="/login" className="underline text-[#BE6F50]">Log in</a></p>
+            <p className="text-white text-center mt-5">Already have an account? <Link to="/login">
+            <span className="underline text-[#BE6F50]">Log in</span></Link></p>
 
             {/* Link to Content Creator page */}
-            <p className="text-white text-center mt-5">User? <a href="/signup" className="underline text-[#BE6F50]">Sign up as a user  </a></p>
-
+            <p className="text-white text-center mt-5">User? <Link to="/signup">
+            <span className="underline text-[#BE6F50]">Sign up as a user  </span></Link></p>
 
           </form>
 
