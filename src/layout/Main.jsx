@@ -30,51 +30,53 @@ const Main = () => {
           className="drawer-overlay"
         ></label>
         {/* Sidebar content here */}
-        <div className=" bg-[#424242]">
+        <div className="flex flex-col gap-3 bg-[#424242]">
           {/* First Section */}
-          <div className="mb-4 p-5 rounded-lg bg-[#1E1C1A]">
-            <div className="flex items-center mb-4">
-              <h1 className="text-[#BE6F50] text-2xl">Epicure</h1>
+          <div className=" p-4 rounded-lg bg-[#1E1C1A]">
+            <div className="flex items-center mb-2">
+              <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
             </div>
 
             <Link to="/">
-              <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
-                <FaHome className="w-6 h-6 mr-2 text-[#BE6F50]" />
-                <button className="flex items-center text-white px-4 py-2 ">
+              <div className="flex items-center  px-2 ">
+                <FaHome className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                <h1 className="flex items-center text-white px-4 py-1 ">
                   Home
-                </button>
+                </h1>
               </div>
             </Link>
 
             <Link to="/search">
-              <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
-                <FaSearch className="w-6 h-6 mr-2 text-[#BE6F50]" />
-                <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+              <div className="flex items-center  px-2 ">
+                <FaSearch className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                <h1 className="flex items-center text-white px-4 py-1 ">
                   Search
-                </button>
+                </h1>
               </div>
             </Link>
 
-            <div className="flex items-center mb-4 px-2 bg-[#272727] rounded-lg">
+            <div className="flex items-center  px-2 ">
               {/* Other content */}
               {/* Render login/logout button */}
-              <div className="flex items-center px-2 bg-[#272727] rounded-lg">
+              <div className="flex items-center ">
                 {/* Function to render login or logout button based on user login status */}
                 {isUserLoggedIn ? (
                   // User is logged in, render logout button
                   <div className="flex justify-center items-center">
-                    <RiLogoutBoxFill className="w-6 h-6 mr-2 text-[#BE6F50]" />
-                    <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
+                    <RiLogoutBoxFill className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                    <button className="flex items-center text-white px-4 py-1 ">
                       Log out
                     </button>
                   </div>
                 ) : (
                   // User is not logged in, render login button
                   <div className="flex justify-center items-center">
-                    <BiSolidLogIn className="w-6 h-6 mr-2 text-[#BE6F50]" />
-                    <Link to="/login"><button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
-                      LogIn
-                    </button></Link>
+                    <BiSolidLogIn className="w-5 h-5  text-[#BE6F50]" />
+                    <Link to="/login">
+                      <h1 className="flex items-center text-white ml-2 px-4 py-1 rounded-lg">
+                        LogIn
+                      </h1>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -82,31 +84,44 @@ const Main = () => {
           </div>
 
           {/* Second Section */}
-          <div className="mb-4 md:h-[371px] p-5 rounded-lg bg-[#1E1C1A]">
-            <div className="flex items-center mb-4 gap-5 text-white">
-              <div className="flex gap-2 items-center">
-                <ImBooks className="text-xl text-[#BE6F50]" />
-                <span className="text-[18px] font-bold">Your Cookbooks</span>
-              </div>
-              <FaPlus className="w-6 h-6 mr-2" />
-            </div>
-            <div className="flex items-center mb-4">
-              <button className="flex items-center text-white bg-[#272727] px-4 py-2 rounded-lg">
-                Add Cookbook
-              </button>
-            </div>
-            <div className="flex flex-col">
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
-                favorites
-              </button>
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
-                Book-2
-              </button>
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg">
-                Book-3
-              </button>
-            </div>
-          </div>
+          <div className="p-5 rounded-lg bg-[#1E1C1A]">
+      <div className="flex items-center mb-4 gap-5 text-white">
+        <div className="flex gap-2 items-center">
+          <ImBooks className="text-xl text-[#BE6F50]" />
+          <span className="text-[18px] font-bold">Your Cookbooks</span>
+        </div>
+        <FaPlus className="w-5 h-5" />
+      </div>
+      {/* Container for the scrollable part */}
+      <div className="overflow-y-auto max-h-[180px]">
+        <div className="flex flex-col gap-3">
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            favorites
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-2
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-3
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-4
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-5
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-6
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-7
+          </button>
+          <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+            Book-8
+          </button>
+        </div>
+      </div>
+    </div>
 
           {/* Third Section */}
           <div className="p-5 rounded-lg bg-[#1E1C1A]">
@@ -114,16 +129,27 @@ const Main = () => {
               <LuChefHat className="text-[#BE6F50] text-xl" />
               <span className="text-lg font-bold text-white">Your Chefs</span>
             </div>
-            <div className="flex flex-col">
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+            <div className="overflow-y-auto max-h-[130px]">
+            <div className="flex flex-col gap-3 ">
+              <button className="text-white bg-[#272727] px-4 rounded-lg ">
                 Chef-1
               </button>
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg mb-2">
+              <button className="text-white bg-[#272727] px-4 rounded-lg ">
                 Chef-2
               </button>
-              <button className="text-white bg-[#272727] px-4 py-2 rounded-lg">
+              <button className="text-white bg-[#272727] px-4 rounded-lg">
                 Chef-3
               </button>
+              <button className="text-white bg-[#272727] px-4 rounded-lg">
+                Chef-4
+              </button>
+              <button className="text-white bg-[#272727] px-4 rounded-lg">
+                Chef-6
+              </button>
+              <button className="text-white bg-[#272727] px-4 rounded-lg">
+                Chef-7
+              </button>
+            </div>
             </div>
           </div>
         </div>
