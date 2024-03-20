@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const SignUp = () => {
@@ -84,7 +85,7 @@ const SignUp = () => {
             <p className="text-white text-center mt-5">Already have an account? <a href="/login" className="underline text-[#BE6F50]">Log in</a> </p>
 
             {/* Link to Content Creator page */}
-            <p className="text-white text-center mt-5">Chef? <a href="/creatorSignup" className="underline text-[#BE6F50]">Sign up as content creator </a> </p>
+            <p className="text-white text-center mt-5">Chef? <Link to="/creatorSignup"><span href="/creatorSignup" className="underline text-[#BE6F50]">Sign up as content creator </span></Link> </p>
 
 
           </form>
