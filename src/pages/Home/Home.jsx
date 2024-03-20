@@ -11,14 +11,14 @@ import lastSearch4 from "../../assets/images/lastSearch-4.png";
 const Home = () => {
   return (
     <div className="w-full h-full my-2 rounded-lg">
-      <div className="w-full h-full bg-[#1E1C1A]">
+      <div className="w-full h-full rounded-lg bg-[#1E1C1A]">
         <div className="relative w-full h-[209px] rounded-lg bg-gradient-to-b from-[#768895] mb-8">
           <h1 className="absolute bottom-[20%] left-[4%] text-[42.67px] font-bold text-white">
             Home
           </h1>
         </div>
 
-        <div className=" text-white text-lg pl-10 ">
+        <div className=" text-white text-lg p-10 ">
           {/* Top 10 Section */}
           <div className="mb-8">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           {/* Last Search Section */}
-          <div className="mt-[160px]">
+          <div className="mt-[80px]">
             <h2 className="text-[30.67px] font-bold text-white">Last Search</h2>
             <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
               <img
