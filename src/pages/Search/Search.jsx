@@ -41,60 +41,60 @@ const Search = () => {
             </div>
           </div>
           
-              <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5  mt-4">
                 <img
                   src={top10Img1}
                   alt="Image 1"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={top10Img2}
                   alt="Image 2"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={top10Img3}
                   alt="Image 3"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={top10Img4}
                   alt="Image 4"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={top10Img5}
                   alt="Image 4"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
               </div>
               {/* Last Search Images */}
             <div className="">
-              <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
                 <img
                   src={lastSearch1}
                   alt="Image 6"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={lastSearch2}
                   alt="Image 7"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={lastSearch3}
                   alt="Image 8"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={lastSearch4}
                   alt="Image 9"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
                 <img
                   src={top10Img5}
                   alt="Image 9"
-                  className=" mr-4"
+                  className=" w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
               </div>
             </div>

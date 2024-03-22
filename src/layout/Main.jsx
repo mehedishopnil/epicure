@@ -97,7 +97,7 @@ const Main = () => {
                 <FaPlus className="w-5 h-5" />
               </div>
               {/* Container for the scrollable part */}
-              <div className="overflow-y-auto md:max-h-[180px] ">
+              <div className="overflow-y-auto sm:max-h-[180px] md:max-h-[180px] ">
                 <div className="flex flex-col gap-3">
                   <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
                     favorites
@@ -133,7 +133,7 @@ const Main = () => {
                 <LuChefHat className="text-[#BE6F50] text-xl" />
                 <span className="text-lg font-bold text-white">Your Chefs</span>
               </div>
-              <div className="overflow-y-auto md:max-h-[145px]">
+              <div className="overflow-y-auto sm:max-h-[145px] md:max-h-[145px]">
                 <div className="flex flex-col gap-3 ">
                   <button className="text-white bg-[#272727] px-4 rounded-lg ">
                     Chef-1
