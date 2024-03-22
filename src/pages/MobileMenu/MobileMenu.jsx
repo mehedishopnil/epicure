@@ -9,7 +9,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="relative bg-gray-800">
+    <div className="sm:hidden md:hidden lg:hidden relative  bg-gray-800">
       <nav className="flex justify-between items-center p-4 bg-gray-900">
       <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
         <div className="md:hidden">
