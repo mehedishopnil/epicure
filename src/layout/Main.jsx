@@ -1,20 +1,27 @@
-import { FaHome, FaPlus, FaSearch } from "react-icons/fa";
+import { FaBars, FaHome, FaPlus, FaSearch } from "react-icons/fa";
 import { RiLogoutBoxFill } from "react-icons/ri";
 import { Link, Outlet } from "react-router-dom";
 import { ImBooks } from "react-icons/im";
 import { LuChefHat } from "react-icons/lu";
 import { BiSolidLogIn } from "react-icons/bi";
 import { useState } from "react";
+import MobileMenu from "../pages/MobileMenu/MobileMenu";
 
 const Main = () => {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false); // Default user is logged in
-
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu visibility
   // Function to toggle user login status
   const toggleUserLogin = () => {
     setIsUserLoggedIn(!isUserLoggedIn);
   };
+
+  // Function to toggle mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
-    <div className="drawer sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
+    <div className="">
+      <div className="hidden sm:block md:block lg:block drawer sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
@@ -154,6 +161,69 @@ const Main = () => {
           </div>
         </div>
       </div>
+
+      <div className="sm:hidden md:hidden lg:hidden">
+  {/* Mobile menu content */}
+  {/* This will be shown when user clicks on the hamburger menu */}
+  <button onClick={toggleMobileMenu} className="text-white">
+    <FaBars className="w-6 h-6" />
+  </button>
+  {isMobileMenuOpen && (
+    <div className="flex flex-col gap-3 bg-[#424242]">
+      {/* Add your mobile menu items here */}
+      <Link to="/">
+        <div className="flex items-center  px-2 ">
+          <FaHome className="w-5 h-5 mr-2 text-[#BE6F50]" />
+          <h1 className="flex items-center text-white px-4 py-1 ">
+            Home
+          </h1>
+        </div>
+      </Link>
+
+      <Link to="/search">
+        <div className="flex items-center  px-2 ">
+          <FaSearch className="w-5 h-5 mr-2 text-[#BE6F50]" />
+          <h1 className="flex items-center text-white px-4 py-1 ">
+            Search
+          </h1>
+        </div>
+      </Link>
+
+      <div className="flex items-center  px-2 ">
+        {/* Other content */}
+        {/* Render login/logout button */}
+        <div className="flex items-center ">
+          {/* Function to render login or logout button based on user login status */}
+          {isUserLoggedIn ? (
+            // User is logged in, render logout button
+            <div className="flex justify-center items-center">
+              <RiLogoutBoxFill className="w-5 h-5 mr-2 text-[#BE6F50]" />
+              <button className="flex items-center text-white px-4 py-1 ">
+                Log out
+              </button>
+            </div>
+          ) : (
+            // User is not logged in, render login button
+            <div className="flex justify-center items-center">
+              <BiSolidLogIn className="w-5 h-5  text-[#BE6F50]" />
+              <Link to="/login">
+                <h1 className="flex items-center text-white ml-2 px-4 py-1 rounded-lg">
+                  LogIn
+                </h1>
+              </Link>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  )}
+</div>
+    </div>
+          <div>
+            <MobileMenu />
+            <Outlet />
+          </div>
+
     </div>
   );
 };
