@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BiSolidLogIn } from "react-icons/bi";
 import { FaHome, FaPlus, FaSearch } from "react-icons/fa";
-import { ImBook } from "react-icons/im";
+import { ImBook, ImBooks } from "react-icons/im";
 import { LuChefHat } from "react-icons/lu";
 import { RiMenuLine, RiCloseLine, RiLogoutBoxFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -95,16 +95,17 @@ const MobileMenu = () => {
               <div className="p-4 rounded-lg bg-[#1E1C1A]">
                 <div className="flex items-center mb-4 gap-5 text-white">
                   <div className="flex gap-2 items-center">
-                    <ImBook className="text-xl text-[#BE6F50]" />
+                    <ImBooks className="text-xl text-[#BE6F50]" />
                     <span className="text-[18px] font-bold">
                       Your Cookbooks
                     </span>
                   </div>
                   <FaPlus className="w-5 h-5" />
                 </div>
-                {/* Container for the scrollable part */}
-                <div className="overflow-y-auto max-h-[150px] ">
+                {/* Scrollable container */}
+                <div className="overflow-y-scroll max-h-[210px] pr-3 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800">
                   <div className="flex flex-col gap-3">
+                    {/* Book buttons */}
                     <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
                       favorites
                     </button>
@@ -129,24 +130,29 @@ const MobileMenu = () => {
                     <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
                       Book-8
                     </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
+                      Book-8
+                    </button>
                   </div>
                 </div>
               </div>
 
               {/* Third Section */}
-              <div className="p-5 rounded-lg bg-[#1E1C1A]">
-                <div className="flex gap-2 items-center mb-4 ">
+              <div className="max-h-full p-5 mb-5 rounded-lg bg-[#1E1C1A]">
+                <div className="flex gap-2 items-center mb-4">
                   <LuChefHat className="text-[#BE6F50] text-xl" />
                   <span className="text-lg font-bold text-white">
                     Your Chefs
                   </span>
                 </div>
-                <div className="overflow-y-auto max-h-[145px]">
-                  <div className="flex flex-col gap-3 ">
-                    <button className="text-white bg-[#272727] px-4 rounded-lg ">
+                {/* Scrollable container */}
+                <div className="overflow-y-auto max-h-[220px] pr-2 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+                  <div className="flex flex-col gap-3">
+                    {/* Chef buttons */}
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
                       Chef-1
                     </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg ">
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
                       Chef-2
                     </button>
                     <button className="text-white bg-[#272727] px-4 rounded-lg">
@@ -161,9 +167,26 @@ const MobileMenu = () => {
                     <button className="text-white bg-[#272727] px-4 rounded-lg">
                       Chef-7
                     </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
+                      Chef-7
+                    </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
+                      Chef-7
+                    </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
+                      Chef-7
+                    </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
+                      Chef-7
+                    </button>
+                    <button className="text-white bg-[#272727] px-4 rounded-lg">
+                      Chef-7
+                    </button>
                   </div>
                 </div>
               </div>
+
+              
             </div>
           </div>
         </div>
