@@ -16,17 +16,17 @@ const Main = () => {
   };
 
   return (
-    <div className="h-screen">
+    <>
       {/* This part should be hidden for mobile responsive */}
       <div className=" hidden sm:block md:block lg:block ">
-        <div className=" drawer drawer-mobile sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
+        <div className=" h-screen drawer drawer-mobile sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col items-center justify-center">
             {/* Page content here */}
             <Outlet></Outlet>
           </div>
 
-          <div className="drawer-sidebar p-2 h-screen overflow-hidden">
+          <div className="h-full drawer-sidebar p-2 overflow-hidden">
             {/* Drawer Overlay */}
             <label
               htmlFor="my-drawer-2"
@@ -35,9 +35,9 @@ const Main = () => {
             ></label>
 
             {/* Sidebar content here */}
-            <div className="flex flex-col gap-3 mb-5 bg-[#424242]">
+            <div className="h-screen flex flex-col gap-3 mb-5 bg-[#424242]">
               {/* First Section */}
-              <div className="p-4 rounded-lg bg-[#1E1C1A]">
+              <div className=" p-4 rounded-lg bg-[#1E1C1A]">
                 <div className="flex items-center mb-2">
                   <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
                 </div>
@@ -91,7 +91,7 @@ const Main = () => {
               </div>
 
               {/* Second Section */}
-              <div className="p-4 rounded-lg bg-[#1E1C1A]">
+              <div className="h-full p-4 rounded-lg bg-[#1E1C1A]">
                 <div className="flex items-center mb-4 gap-5 text-white">
                   <div className="flex gap-2 items-center">
                     <ImBooks className="text-xl text-[#BE6F50]" />
@@ -137,7 +137,7 @@ const Main = () => {
               </div>
 
               {/* Third Section */}
-              <div className="max-h-full p-5 mb-5 rounded-lg bg-[#1E1C1A]">
+              <div className="h-full p-5 mb-5 rounded-lg bg-[#1E1C1A]">
                 <div className="flex gap-2 items-center mb-4">
                   <LuChefHat className="text-[#BE6F50] text-xl" />
                   <span className="text-lg font-bold text-white">
@@ -196,7 +196,7 @@ const Main = () => {
         <MobileMenu />
         <Outlet />
       </div>
-    </div>
+    </>
   );
 };
 

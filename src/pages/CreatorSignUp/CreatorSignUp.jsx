@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CreatorSignUp = () => {
-     // State variables for name, email, and password
+  // State variables for name, email, and password
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,20 +18,24 @@ const CreatorSignUp = () => {
     console.log("Password:", password);
   };
 
-    return (
-        <div className="w-full h-full my-3 font-syne grid grid-cols-2">
+  return (
+    <div className="h-full my-3 font-syne grid grid-cols-2">
       {/* Left side: Logo and Tagline */}
       <div className="flex flex-col justify-center gap-10 p-10 bg-[#BE6F50]">
         <h1 className="text-[60px] text-white font-bold">Epicure</h1>
-        <h2 className="font-syne text-[45px] text-white">Feast Your Senses Culinary Creators on Exclusive Hub</h2>
+        <h2 className="font-syne text-[45px] text-white">
+          Feast Your Senses Culinary Creators on Exclusive Hub
+        </h2>
       </div>
 
       {/* Right side: Signup form */}
       <div className="grid items-center bg-[#1F1D1C]">
         <div className="max-w-md mx-auto mt-8 p-6">
           {/* Form title */}
-          <h2 className="text-2xl text-white font-bold mb-4">Sign up as content creator</h2>
-          <form onSubmit={handleSubmit} className="w-[400px]">
+          <h2 className="text-2xl text-white font-bold mb-4">
+            Sign up as content creator
+          </h2>
+          <form onSubmit={handleSubmit} className="">
             {/* Name input */}
             <div className="mb-4">
               <input
@@ -41,7 +45,9 @@ const CreatorSignUp = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${name ? 'text-white' : ''}`}
+                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
+                  name ? "text-white" : ""
+                }`}
                 required
               />
             </div>
@@ -54,7 +60,9 @@ const CreatorSignUp = () => {
                 value={email}
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
-                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${email ? 'text-white' : ''}`}
+                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
+                  email ? "text-white" : ""
+                }`}
                 required
               />
             </div>
@@ -67,7 +75,9 @@ const CreatorSignUp = () => {
                 value={password}
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
-                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${password ? 'text-white' : ''}`}
+                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
+                  password ? "text-white" : ""
+                }`}
                 required
               />
             </div>
@@ -79,17 +89,24 @@ const CreatorSignUp = () => {
               Sign up
             </button>
 
-
             {/* Link to login page */}
-            <p className="text-white text-center mt-5">Already have an account? <Link to="/login">
-            <span className="underline text-[#BE6F50]">Log in</span></Link></p>
+            <p className="text-white text-center mt-5">
+              Already have an account?{" "}
+              <Link to="/login">
+                <span className="underline text-[#BE6F50]">Log in</span>
+              </Link>
+            </p>
 
             {/* Link to Content Creator page */}
-            <p className="text-white text-center mt-5">User? <Link to="/signup">
-            <span className="underline text-[#BE6F50]">Sign up as a user  </span></Link></p>
-
+            <p className="text-white text-center mt-5">
+              User?{" "}
+              <Link to="/signup">
+                <span className="underline text-[#BE6F50]">
+                  Sign up as a user{" "}
+                </span>
+              </Link>
+            </p>
           </form>
-
 
           {/* Signup with Google button */}
           <button className="mt-10 w-full flex items-center justify-center text-white bg-[#BE6F50] py-2 px-4 rounded-full hover:bg-[#8F8F8F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
@@ -98,7 +115,7 @@ const CreatorSignUp = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default CreatorSignUp;
