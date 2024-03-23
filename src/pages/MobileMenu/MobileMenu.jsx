@@ -103,7 +103,7 @@ const MobileMenu = () => {
                   <FaPlus className="w-5 h-5" />
                 </div>
                 {/* Scrollable container */}
-                <div className="overflow-y-scroll max-h-[210px] pr-3 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+                <div className="overflow-y-scroll max-h-[210px] pr-3 scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
                   <div className="flex flex-col gap-3">
                     {/* Book buttons */}
                     <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
@@ -146,7 +146,7 @@ const MobileMenu = () => {
                   </span>
                 </div>
                 {/* Scrollable container */}
-                <div className="overflow-y-auto max-h-[220px] pr-2 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+                <div className="overflow-y-auto max-h-[220px] pr-2 scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
                   <div className="flex flex-col gap-3">
                     {/* Chef buttons */}
                     <button className="text-white bg-[#272727] px-4 rounded-lg">
