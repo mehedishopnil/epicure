@@ -16,10 +16,10 @@ const Main = () => {
   };
 
   return (
-    <>
+    <div className="h-screen">
       {/* This part should be hidden for mobile responsive */}
-      <div className=" hidden sm:block md:block lg:block ">
-        <div className=" h-screen drawer drawer-mobile sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
+      <div className="h-full hidden sm:block md:block lg:block bg-[#424242]">
+        <div className=" drawer drawer-mobile sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col items-center justify-center">
             {/* Page content here */}
@@ -196,7 +196,7 @@ const Main = () => {
         <MobileMenu />
         <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 
