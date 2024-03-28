@@ -17,9 +17,11 @@ const Home = () => {
             Home
           </h1>
         </div>
-{/* This two section should be scrollable */}
-        <div className=" grid grid-rows-2 
-          text-white text-lg px-10 lg:gap-10">
+        {/* This two section should be scrollable */}
+        <div
+          className=" grid grid-rows-2 
+          text-white text-lg px-10 lg:gap-10"
+        >
           {/* Top 10 Section */}
           <div className="row-span-1  mb-4">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>
