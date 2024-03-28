@@ -26,7 +26,7 @@ const SingleRecipePage = () => {
   };
 
   return (
-    <div className="h-screen bg-[#1E1C1A]">
+    <div className=" h-screen bg-[#1E1C1A]">
       <div className="relative flex  w-full h-[200px] lg:h-[321px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
         <div className="absolute flex  bottom-[10%] left-[10%] sm:left-[4%]  md:left-[4%] lg:left-[4%]">
           <div className="flex">
@@ -46,7 +46,7 @@ const SingleRecipePage = () => {
       <div>
 
 
-        
+
         {/* Filter menu */}
         <div className="flex text-white justify-center gap-10">
           <button
@@ -85,9 +85,12 @@ const SingleRecipePage = () => {
             Premium
           </button>
         </div>
+        <div className="w-10/12 mx-auto my-5 border-b border-[#8F8F8F]"></div>
 
         {/* Render selected component */}
+        <div className="p-5 mx-10">
         {renderComponent()}
+        </div>
       </div>
     </div>
   );
