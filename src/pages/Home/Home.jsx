@@ -10,19 +10,20 @@ import lastSearch4 from "../../assets/images/lastSearch-4.png";
 
 const Home = () => {
   return (
-    <div className="w-full h-full  my-2 rounded-lg">
-      <div className="h-screen rounded-lg bg-[#1E1C1A]">
-        <div className="relative w-full h-[200px] lg:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-8">
+    <div className="w-full h-screen  my-2 rounded-lg">
+      <div className="h-full rounded-lg bg-[#1E1C1A]">
+        <div className="relative w-full h-[200px] lg:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
           <h1 className="absolute bottom-[20%] left-[10%] sm:left-[4%]  md:left-[4%] lg:left-[4%] text-[32.67px] md:text-[42.67px] lg:text-[42.67px] font-bold text-white">
             Home
           </h1>
         </div>
-
-        <div className=" text-white text-lg p-10 ">
+{/* This two section should be scrollable */}
+        <div className=" grid grid-rows-2 
+          text-white text-lg px-10 lg:gap-10">
           {/* Top 10 Section */}
-          <div className="mb-8">
+          <div className="row-span-1  mb-4">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5  mt-4">
+            <div className="grid grid-cols-2 overflow-y-auto md:max-h-[40%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5  mt-4">
               <img
                 src={top10Img1}
                 alt="Image 1"
@@ -52,9 +53,9 @@ const Home = () => {
           </div>
 
           {/* Last Search Section */}
-          <div className="mt-[80px]">
+          <div className="row-span-1 ">
             <h2 className="text-[30.67px] font-bold text-white">Last Search</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
+            <div className="grid grid-cols-2 overflow-y-auto md:max-h-[40%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
               <img
                 src={lastSearch1}
                 alt="Image 5"
