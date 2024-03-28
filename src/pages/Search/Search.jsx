@@ -8,16 +8,14 @@ import lastSearch2 from "../../assets/images/lastSearch-2.png";
 import lastSearch3 from "../../assets/images/lastSearch-3.png";
 import lastSearch4 from "../../assets/images/lastSearch-4.png";
 import { FaSearch } from "react-icons/fa";
+import PageHeader from "../../components/common/PageHeader/PageHeader";
 
 const Search = () => {
   return (
-    <div className="w-full h-screen  my-2 rounded-lg">
+    <div className="w-full h-screen rounded-lg">
       <div className="h-full rounded-lg bg-[#1E1C1A]">
-        <div className="relative w-full h-[200px] lg:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
-          <h1 className="absolute bottom-[20%] left-[10%] sm:left-[4%]  md:left-[4%] lg:left-[4%] text-[32.67px] md:text-[42.67px] lg:text-[42.67px] font-bold text-white">
-            Search
-          </h1>
-        </div>
+        
+        <PageHeader HeaderName="Search" />
 
         {/* Search Bar */}
         <div className="flex items-center justify-center my-5">

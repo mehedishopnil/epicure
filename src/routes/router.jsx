@@ -7,6 +7,7 @@ import Search from "../pages/Search/Search";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import CreatorSignUp from "../pages/CreatorSignUp/CreatorSignUp";
+import SingleRecipePage from "../pages/SingleRecipePage/SingleRecipePage";
 
 
  export const router = createBrowserRouter([
@@ -33,6 +34,10 @@ import CreatorSignUp from "../pages/CreatorSignUp/CreatorSignUp";
         {
           path: "/creatorSignup",
           element: <CreatorSignUp/>
+        },
+        {
+          path: "/single_recipe",
+          element: <SingleRecipePage/>
         }
       ],
     },

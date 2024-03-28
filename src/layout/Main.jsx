@@ -16,12 +16,12 @@ const Main = () => {
   };
 
   return (
-    <div className="h-screen">
+    <div className=" h-screen">
       {/* Main Container */}
       <div className="flex w-full h-full overflow-hidden">
         
         {/* Sidebar */}
-        <div className="hidden sm:block md:block lg:block bg-[#424242] overflow-y-auto">
+        <div className="hidden sm:w-[290px] md:w-[300px] lg:w-[334px] sm:block md:block lg:block bg-[#424242] overflow-y-auto">
           <div className="h-full grid grid-rows-8 gap-2 p-2">
 
             <div className="row-span-2 bg-[#1E1C1A] rounded-lg py-3 px-4">
@@ -114,7 +114,7 @@ const Main = () => {
         </div>
         
         {/* Content */}
-        <div className="w-full h-full bg-[#424242]">
+        <div className="w-full h-full py-3 bg-[#424242]">
           <Outlet />
         </div>
         
