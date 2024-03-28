@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-full my-3 font-syne  lg:grid lg:grid-cols-2">
+    <div className="w-full h-full my-3 font-syne  lg:grid lg:grid-cols-2 overflow-hidden">
       {/* Left side: Logo and Tagline */}
       <div className="flex flex-col justify-center md:h-[250px] lg:h-full gap-10 p-10 bg-[#BE6F50]">
         <h1 className="md:text-[35px] lg:text-[50px] xl:text-[60px] text-white font-bold">

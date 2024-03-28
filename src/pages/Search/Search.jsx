@@ -11,7 +11,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
   return (
-    <div className="w-full h-full my-2 rounded-lg">
+    <div className="w-full h-screen my-2 rounded-lg">
       <div className=" w-full h-full rounded-lg bg-[#1E1C1A]">
         {/* Search Header */}
         <div className="relative w-full h-[209px] rounded-lg bg-gradient-to-b from-[#768895] mb-8">

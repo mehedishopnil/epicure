@@ -11,8 +11,8 @@ import lastSearch4 from "../../assets/images/lastSearch-4.png";
 const Home = () => {
   return (
     <div className="w-full h-full  my-2 rounded-lg">
-      <div className="w-full h-full rounded-lg bg-[#1E1C1A]">
-        <div className="relative w-full h-[209px] rounded-lg bg-gradient-to-b from-[#768895] mb-8">
+      <div className="h-screen rounded-lg bg-[#1E1C1A]">
+        <div className="relative w-full h-[200px] lg:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-8">
           <h1 className="absolute bottom-[20%] left-[10%] sm:left-[4%]  md:left-[4%] lg:left-[4%] text-[32.67px] md:text-[42.67px] lg:text-[42.67px] font-bold text-white">
             Home
           </h1>

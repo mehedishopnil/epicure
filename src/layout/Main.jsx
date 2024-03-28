@@ -17,184 +17,112 @@ const Main = () => {
 
   return (
     <div className="h-screen">
-      {/* This part should be hidden for mobile responsive */}
-      <div className="h-full hidden sm:block md:block lg:block bg-[#424242]">
-        <div className=" drawer drawer-mobile sm:drawer-open md:drawer-open lg:drawer-open bg-[#424242]">
-          <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content flex flex-col items-center justify-center">
-            {/* Page content here */}
-            <Outlet></Outlet>
-          </div>
+      {/* Main Container */}
+      <div className="flex w-full h-full overflow-hidden">
+        
+        {/* Sidebar */}
+        <div className="hidden sm:block md:block lg:block bg-[#424242] overflow-y-auto">
+          <div className="h-full grid grid-rows-8 gap-2 p-2">
 
-          <div className="h-full drawer-sidebar p-2 overflow-hidden">
-            {/* Drawer Overlay */}
-            <label
-              htmlFor="my-drawer-2"
-              aria-label="close sidebar"
-              className="drawer-overlay"
-            ></label>
-
-            {/* Sidebar content here */}
-            <div className="h-screen flex flex-col gap-3 mb-5 bg-[#424242]">
-              {/* First Section */}
-              <div className=" p-4 rounded-lg bg-[#1E1C1A]">
-                <div className="flex items-center mb-2">
-                  <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
-                </div>
-
-                {/* Home Link */}
-                <Link to="/">
-                  <div className="flex items-center px-2">
-                    <FaHome className="w-5 h-5 mr-2 text-[#BE6F50]" />
-                    <h1 className="flex items-center text-white px-4 py-1">
-                      Home
-                    </h1>
-                  </div>
-                </Link>
-
-                {/* Search Link */}
-                <Link to="/search">
-                  <div className="flex items-center px-2">
-                    <FaSearch className="w-5 h-5 mr-2 text-[#BE6F50]" />
-                    <h1 className="flex items-center text-white px-4 py-1">
-                      Search
-                    </h1>
-                  </div>
-                </Link>
-
-                {/* Login/Logout Button */}
-                <div className="flex items-center px-2">
-                  {/* Render login/logout button */}
-                  <div className="flex items-center">
-                    {/* Function to render login or logout button based on user login status */}
-                    {isUserLoggedIn ? (
-                      // User is logged in, render logout button
-                      <div className="flex justify-center items-center">
-                        <RiLogoutBoxFill className="w-5 h-5 mr-2 text-[#BE6F50]" />
-                        <button className="flex items-center text-white px-4 py-1">
-                          Log out
-                        </button>
-                      </div>
-                    ) : (
-                      // User is not logged in, render login button
-                      <div className="flex justify-center items-center">
-                        <BiSolidLogIn className="w-5 h-5 text-[#BE6F50]" />
-                        <Link to="/login">
-                          <h1 className="flex items-center text-white ml-2 px-4 py-1 rounded-lg">
-                            LogIn
-                          </h1>
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                </div>
+            <div className="row-span-2 bg-[#1E1C1A] rounded-lg py-3 px-4">
+              {/* Logo */}
+            <div className="flex items-center mb-2">
+              <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
+            </div>
+            
+            {/* Sidebar Links */}
+            <Link to="/">
+              <div className="flex items-center px-2">
+                <FaHome className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                <h1 className="flex items-center text-white px-4 py-1">Home</h1>
               </div>
-
-              {/* Second Section */}
-              <div className="h-full p-4 rounded-lg bg-[#1E1C1A]">
-                <div className="flex items-center mb-4 gap-5 text-white">
-                  <div className="flex gap-2 items-center">
-                    <ImBooks className="text-xl text-[#BE6F50]" />
-                    <span className="text-[18px] font-bold">
-                      Your Cookbooks
-                    </span>
-                  </div>
-                  <FaPlus className="w-5 h-5" />
-                </div>
-                {/* Scrollable container */}
-                <div className="overflow-y-scroll max-h-[210px] scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
-                  <div className="flex flex-col gap-3">
-                    {/* Book buttons */}
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      favorites
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-2
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-3
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-4
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-5
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-6
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-8
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">
-                      Book-8
-                    </button>
-                  </div>
-                </div>
+            </Link>
+            <Link to="/search">
+              <div className="flex items-center px-2">
+                <FaSearch className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                <h1 className="flex items-center text-white px-4 py-1">Search</h1>
               </div>
-
-              {/* Third Section */}
-              <div className="h-full p-5 mb-5 rounded-lg bg-[#1E1C1A]">
-                <div className="flex gap-2 items-center mb-4">
-                  <LuChefHat className="text-[#BE6F50] text-xl" />
-                  <span className="text-lg font-bold text-white">
-                    Your Chefs
-                  </span>
+            </Link>
+            
+            {/* Login/Logout Button */}
+            <div className="flex items-center px-2">
+              {isUserLoggedIn ? (
+                <div className="flex justify-center items-center">
+                  <RiLogoutBoxFill className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                  <button className="flex items-center text-white px-4 py-1">Log out</button>
                 </div>
-                {/* Scrollable container */}
-                <div className="overflow-y-auto max-h-[220px] scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
-                  <div className="flex flex-col gap-3">
-                    {/* Chef buttons */}
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-1
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-2
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-3
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-4
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-6
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                    <button className="text-white bg-[#272727] px-4 rounded-lg">
-                      Chef-7
-                    </button>
-                  </div>
+              ) : (
+                <div className="flex justify-center items-center">
+                  <BiSolidLogIn className="w-5 h-5 text-[#BE6F50]" />
+                  <Link to="/login">
+                    <h1 className="flex items-center text-white ml-2 px-4 py-1 rounded-lg">LogIn</h1>
+                  </Link>
                 </div>
+              )}
+            </div>
+            </div>
+            
+            {/* Your Cookbooks Section */}
+            <div className="row-span-3 w-full bg-[#1E1C1A] rounded-lg py-5 px-4">
+            <div className="flex items-center mb-4 gap-5 text-white">
+              <div className="flex gap-2 items-center">
+                <ImBooks className="text-xl text-[#BE6F50]" />
+                <span className="text-[18px] font-bold">Your Cookbooks</span>
               </div>
-
-
+              <FaPlus className="w-5 h-5" />
+            </div>
+            
+            {/* Scrollable Container for Cookbooks */}
+            
+            <div className="overflow-y-scroll max-h-[70%]  scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+              <div className="flex flex-col gap-3">
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">favorites</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                {/* Additional Book Buttons */}
+              </div>
+            </div>
+            </div>
+            
+            {/* Your Chefs Section */}
+            <div className="row-span-3 w-full bg-[#1E1C1A] rounded-lg py-5 px-4">
+            <div className="flex gap-2 items-center mb-4">
+              <LuChefHat className="text-[#BE6F50] text-xl" />
+              <span className="text-lg font-bold text-white">Your Chefs</span>
+            </div>
+            
+            {/* Scrollable Container for Chefs */}
+            <div className="overflow-y-auto max-h-[80%] scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+              <div className="flex flex-col gap-3">
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-1</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                {/* Additional Chef Buttons */}
+              </div>
+            </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* This part should be only for mobile view */}
-      <div className="sm:hidden md:hidden lg:hidden">
-        <MobileMenu />
-        <Outlet />
+        
+        {/* Content */}
+        <div className="w-full h-full bg-[#424242]">
+          <Outlet />
+        </div>
+        
+        {/* Mobile Menu */}
+        <div className="sm:hidden md:hidden lg:hidden">
+          <MobileMenu />
+        </div>
+        
       </div>
     </div>
   );
