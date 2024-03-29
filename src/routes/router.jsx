@@ -8,6 +8,7 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import CreatorSignUp from "../pages/CreatorSignUp/CreatorSignUp";
 import SingleRecipePage from "../pages/SingleRecipePage/SingleRecipePage";
+import CoockBooks from "../pages/CoockBooks/CoockBooks";
 
 
  export const router = createBrowserRouter([
@@ -38,6 +39,10 @@ import SingleRecipePage from "../pages/SingleRecipePage/SingleRecipePage";
         {
           path: "/single_recipe",
           element: <SingleRecipePage/>
+        },
+        {
+          path: '/cook_books',
+          element: <CoockBooks />
         }
       ],
     },

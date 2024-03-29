@@ -69,10 +69,12 @@ const Main = () => {
             {/* Your Cookbooks Section */}
             <div className="row-span-3 w-full bg-[#1E1C1A] rounded-lg py-5 px-4">
             <div className="flex items-center mb-4 gap-5 text-white">
+              <Link to="/cook_books">
               <div className="flex gap-2 items-center">
                 <ImBooks className="text-xl text-[#BE6F50]" />
                 <span className="text-[18px] font-bold">Your Cookbooks</span>
               </div>
+              </Link>
               <FaPlus className="w-5 h-5" />
             </div>
             
