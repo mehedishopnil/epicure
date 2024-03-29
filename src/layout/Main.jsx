@@ -16,7 +16,11 @@ const Main = () => {
   };
 
   return (
-    <div className=" h-screen">
+    <div className="h-screen bg-[#424242]">
+       {/* Mobile Menu */}
+       <div className="max-h-full sm:hidden md:hidden lg:hidden">
+          <MobileMenu />
+        </div>
       {/* Main Container */}
       <div className="flex w-full h-full overflow-hidden">
         
@@ -118,12 +122,8 @@ const Main = () => {
           <Outlet />
         </div>
         
-        {/* Mobile Menu */}
-        <div className="sm:hidden md:hidden lg:hidden">
-          <MobileMenu />
-        </div>
-        
       </div>
+     
     </div>
   );
 };
