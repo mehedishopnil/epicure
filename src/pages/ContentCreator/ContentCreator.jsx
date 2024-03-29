@@ -2,44 +2,44 @@ import { useState } from "react";
 import pastaImg from "../../assets/images/top-10(img-2).png";
 import { FiDownload } from "react-icons/fi";
 import { AiFillLike } from "react-icons/ai";
-import About from "./About/About";
-import Ingredients from "./Ingredients/Ingredients";
-import Steps from "./Steps/Steps";
-import Premium from "./Premium/Premium";
+import About from "./AboutContentCreator/AboutContentCreator";
+import Search from "../Search/Search";
+import Statistics from "./Statistics/Statistics";
+import DanielAmit from "../../assets/images/DanielAmit.jpg";
+import { FaEdit } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const SingleRecipePage = () => {
+const ContentCreator = () => {
   const [activeFilter, setActiveFilter] = useState("About");
 
   const renderComponent = () => {
     switch (activeFilter) {
       case "About":
         return <About />;
-      case "Ingredients":
-        return <Ingredients />;
-      case "Steps":
-        return <Steps />;
-      case "Premium":
-        return <Premium />;
+      case "Search":
+        return <Search />;
+      case "Statistics":
+        return <Statistics />;
+      case "Calender":
+        return <ContentCreator />;
       default:
         return null;
     }
   };
-
   return (
     <div className="h-screen bg-[#1E1C1A]">
       <div className="relative">
-        <div className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
+        <div
+          className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
+          style={{ backgroundImage: `url(${DanielAmit})` }}
+        >
           <div className="absolute bottom-5 left-5 flex">
-            <img src={pastaImg} alt="" className="w-20 h-20 lg:w-40 lg:h-40" />
-            <div className="flex flex-col justify-center ml-4">
-              <h1 className="text-2xl lg:text-4xl text-white">Pasta Rose</h1>
-              <p className="text-lg lg:text-xl text-[#8F8F8F]">Daniel Amit</p>
-            </div>
+            <h1 className="text-2xl lg:text-4xl text-white">Daniel Amit</h1>
+            
           </div>
-          <div className="absolute flex gap-5 right-5 bottom-5 lg:right-[5%] lg:bottom-[10%] text-white">
-            <FiDownload className="text-3xl" />
-            <AiFillLike className="text-3xl" />
-          </div>
+          
+          <Link ><FaEdit className="absolute text-3xl flex gap-5 right-5 top-5 lg:right-[5%] lg:bottom-[10%] text-white" /></Link>
+         
         </div>
       </div>
       <div>
@@ -57,27 +57,29 @@ const SingleRecipePage = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Ingredients" ? "bg-[#BE6F50]" : "bg-[#272727]"
+                  activeFilter === "Ingredients"
+                    ? "bg-[#BE6F50]"
+                    : "bg-[#272727]"
                 }`}
-                onClick={() => setActiveFilter("Ingredients")}
+                onClick={() => setActiveFilter("Search")}
               >
-                Ingredients
+                Search
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
                   activeFilter === "Steps" ? "bg-[#BE6F50]" : "bg-[#272727]"
                 }`}
-                onClick={() => setActiveFilter("Steps")}
+                onClick={() => setActiveFilter("Statistics")}
               >
-                Steps
+                Statistics
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
                   activeFilter === "Premium" ? "bg-[#BE6F50]" : "bg-[#272727]"
                 }`}
-                onClick={() => setActiveFilter("Premium")}
+                onClick={() => setActiveFilter("ContentCreator")}
               >
-                Premium
+                Calender
               </button>
             </div>
           </div>
@@ -85,12 +87,10 @@ const SingleRecipePage = () => {
         </div>
 
         {/* Render selected component */}
-        <div className="p-5 mx-3 lg:mx-10">
-          {renderComponent()}
-        </div>
+        <div className="p-5 mx-3 lg:mx-10">{renderComponent()}</div>
       </div>
     </div>
   );
 };
 
-export default SingleRecipePage;
+export default ContentCreator;

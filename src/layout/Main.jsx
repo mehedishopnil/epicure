@@ -6,6 +6,7 @@ import { ImBooks } from "react-icons/im";
 import { LuChefHat } from "react-icons/lu";
 import { Link, Outlet } from "react-router-dom";
 import MobileMenu from "../pages/MobileMenu/MobileMenu";
+import { IoIosCreate } from "react-icons/io";
 
 const Main = () => {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false); // Default user is logged in
@@ -41,10 +42,18 @@ const Main = () => {
                 <h1 className="flex items-center text-white px-4 py-1">Home</h1>
               </div>
             </Link>
+
             <Link to="/search">
               <div className="flex items-center px-2">
                 <FaSearch className="w-5 h-5 mr-2 text-[#BE6F50]" />
                 <h1 className="flex items-center text-white px-4 py-1">Search</h1>
+              </div>
+            </Link>
+
+            <Link to="/content_creator">
+              <div className="flex items-center px-2">
+                <IoIosCreate className="w-5 h-5 mr-2 text-[#BE6F50]" />
+                <h1 className="flex items-center text-white px-4 py-1">Content Creator</h1>
               </div>
             </Link>
             
