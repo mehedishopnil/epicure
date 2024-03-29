@@ -82,13 +82,27 @@ const Main = () => {
             
             <div className="overflow-y-scroll max-h-[70%]  scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
               <div className="flex flex-col gap-3">
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">favorites</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg">Book-3</button>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  favorites
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-2
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-3
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-3
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-3
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-3
+                </Link>
+                <Link to="/cook_books" className="text-white bg-[#272727] px-4 rounded-lg drop-shadow-lg flex items-center justify-center">
+                  Book-3
+                </Link>
                 {/* Additional Book Buttons */}
               </div>
             </div>
@@ -104,14 +118,14 @@ const Main = () => {
             {/* Scrollable Container for Chefs */}
             <div className="overflow-y-auto max-h-[80%] scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
               <div className="flex flex-col gap-3">
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-1</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
-                <button className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-1</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
+                <button type="button" className="text-white bg-[#272727] px-4 rounded-lg">Chef-2</button>
                 {/* Additional Chef Buttons */}
               </div>
             </div>
