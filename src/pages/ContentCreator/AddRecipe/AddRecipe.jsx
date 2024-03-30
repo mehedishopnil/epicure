@@ -48,7 +48,10 @@ const AddRecipe = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto">
+        <div className="">
+            {/* About Section */}
+          <h1 className="text-[#D9D9D9] text-3xl mb-5">Add Recipe</h1>
+
             {/* Ingredient Row */}
             <div className="grid grid-cols-2 justify-center gap-3 mb-4">
                 <div className="flex-1">
@@ -58,7 +61,7 @@ const AddRecipe = () => {
                         className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-800"
                     />
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-3 gap-2">
                     {ingredientFields.map((field, index) => (
                         <div key={field.id} className="flex mb-2">
                             <input
