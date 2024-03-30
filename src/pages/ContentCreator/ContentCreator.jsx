@@ -54,7 +54,7 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Ingredients"
+                  activeFilter === "Search"
                     ? "bg-[#BE6F50]"
                     : "bg-[#272727]"
                 }`}
@@ -64,7 +64,7 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Steps" ? "bg-[#BE6F50]" : "bg-[#272727]"
+                  activeFilter === "Statistics" ? "bg-[#BE6F50]" : "bg-[#272727]"
                 }`}
                 onClick={() => setActiveFilter("Statistics")}
               >
@@ -72,7 +72,7 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Premium" ? "bg-[#BE6F50]" : "bg-[#272727]"
+                  activeFilter === "ContentCreator" ? "bg-[#BE6F50]" : "bg-[#272727]"
                 }`}
                 onClick={() => setActiveFilter("ContentCreator")}
               >
