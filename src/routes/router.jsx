@@ -10,6 +10,7 @@ import CreatorSignUp from "../pages/CreatorSignUp/CreatorSignUp";
 import SingleRecipePage from "../pages/SingleRecipePage/SingleRecipePage";
 import CoockBooks from "../pages/CoockBooks/CoockBooks";
 import ContentCreator from "../pages/ContentCreator/ContentCreator";
+import AddRecipe from "../pages/ContentCreator/AddRecipe/AddRecipe";
 
 
  export const router = createBrowserRouter([
@@ -48,6 +49,10 @@ import ContentCreator from "../pages/ContentCreator/ContentCreator";
         {
           path: '/content_creator',
           element: <ContentCreator />
+        },
+        {
+          path: '/add_recipe',
+          element: <AddRecipe />
         }
       ],
     },

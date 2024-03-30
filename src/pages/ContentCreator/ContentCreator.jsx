@@ -1,7 +1,4 @@
 import { useState } from "react";
-import pastaImg from "../../assets/images/top-10(img-2).png";
-import { FiDownload } from "react-icons/fi";
-import { AiFillLike } from "react-icons/ai";
 import About from "./AboutContentCreator/AboutContentCreator";
 import Search from "../Search/Search";
 import Statistics from "./Statistics/Statistics";
