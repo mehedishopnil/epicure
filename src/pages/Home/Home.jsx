@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="w-full h-screen rounded-lg">
+    <div className="w-full h-full rounded-lg">
       <div className="h-full grid grid-row-10 rounded-lg bg-[#1E1C1A]">
         <div className="row-span-2">
           <PageHeader HeaderName="Home" />
@@ -20,7 +20,7 @@ const Home = () => {
         {/* This two section should be scrollable */}
         <div
           className=" grid grid-rows-2 row-span-8 bg-[#1E1C1A]
-          text-white text-lg px-10 lg:gap-10"
+          text-white text-lg px-10 rounded-lg lg:gap-10"
         >
           {/* Top 10 Section */}
           <div className="row-span-1  mb-4">
@@ -32,34 +32,43 @@ const Home = () => {
                   alt="Image 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
+
               <Link to="/single_recipe">
                 <img
-                  src={top10Img2}
-                  alt="Image 2"
+                  src={top10Img1}
+                  alt="Image 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" >
                 <img
-                  src={top10Img3}
-                  alt="Image 3"
+                  src={top10Img1}
+                  alt="Image 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" >
                 <img
-                  src={top10Img4}
-                  alt="Image 4"
+                  src={top10Img1}
+                  alt="Image 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
+
               <Link to="/single_recipe">
                 <img
-                  src={top10Img5}
-                  alt="Image 4"
-                  className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
+                  src={top10Img1}
+                  alt="Image 1"
+                  className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
             </div>
           </div>
@@ -78,6 +87,7 @@ const Home = () => {
                   alt="Image 5"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                 <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
               <Link
                 to="/single-recipe"
@@ -88,6 +98,7 @@ const Home = () => {
                   alt="Image 6"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
               <Link
                 to="/single-recipe"
@@ -98,6 +109,7 @@ const Home = () => {
                   alt="Image 7"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
               <Link
                 to="/single-recipe"
@@ -108,6 +120,7 @@ const Home = () => {
                   alt="Image 8"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
               <Link
                 to="/single-recipe"
@@ -118,6 +131,7 @@ const Home = () => {
                   alt="Image 8"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
             </div>
           </div>
