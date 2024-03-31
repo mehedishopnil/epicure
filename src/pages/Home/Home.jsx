@@ -13,11 +13,13 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="w-full h-screen rounded-lg">
-      <div className="h-full rounded-lg bg-[#1E1C1A]">
-        <PageHeader HeaderName="Home" />
+      <div className="h-full grid grid-row-10 rounded-lg bg-[#1E1C1A]">
+        <div className="row-span-2">
+          <PageHeader HeaderName="Home" />
+          </div>
         {/* This two section should be scrollable */}
         <div
-          className=" grid grid-rows-2 
+          className=" grid grid-rows-2 row-span-8 bg-[#1E1C1A]
           text-white text-lg px-10 lg:gap-10"
         >
           {/* Top 10 Section */}
