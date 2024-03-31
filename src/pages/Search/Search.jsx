@@ -12,7 +12,7 @@ import PageHeader from "../../components/common/PageHeader/PageHeader";
 
 const Search = () => {
   return (
-    <div className="w-full h-screen rounded-lg">
+    <div className="w-full h-full rounded-lg">
       <div className="grid grid-rows-10 h-full rounded-lg bg-[#1E1C1A]">
         <div className="row-span-2">
           <PageHeader HeaderName="Search" />
