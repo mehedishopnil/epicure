@@ -25,7 +25,7 @@ const Statistics = () => {
     }, []);
 
     return (
-        <div className="overflow-y-auto max-h-[400px]  scrollbar-none">
+        <div className="overflow-y-auto grid grid-cols-1 items-center lg:max-auto lg:max-w-screen-sm max-h-[400px]  scrollbar-none">
             <div className=" rounded-lg p-6 shadow-lg">
                 {/* Title */}
                 <h1 className="text-white text-3xl mb-5">Statistics</h1>
