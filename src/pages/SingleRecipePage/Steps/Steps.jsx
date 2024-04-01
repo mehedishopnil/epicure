@@ -5,7 +5,7 @@ import Pasta_4 from "../../../assets/images/Pasta-4.png";
 
 const Steps = () => {
     return (
-        <div className="overflow-y-auto max-h-[400px]  scrollbar-none">
+        <div className="overflow-y-auto max-h-[400px] scrollbar-none">
             <h1 className="text-[30.67px] font-bold text-[#D9D9D9]">Steps</h1>
 
             {/* Step 1 */}
@@ -45,7 +45,7 @@ const Steps = () => {
             </div>
             
             {/* Step 4 */}
-            <div className="grid grid-cols-6 gap-5 mt-5">
+            <div className="grid grid-cols-6 gap-5 mb-8 mt-5">
                 <div className="w-auto h-[152px] col-span-4 rounded-lg p-3 bg-[#272727]">
                     <h1 className="text-[20px] font-bold text-[#666666]">Step 4</h1>
                     {/* Here I need to add the steps details */}

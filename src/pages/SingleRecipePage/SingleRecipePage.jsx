@@ -26,7 +26,7 @@ const SingleRecipePage = () => {
   };
 
   return (
-    <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
+    <div className="h-full rounded-lg  bg-[#1E1C1A] overflow-hidden">
       <div className="relative">
         <div className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
           <div className="absolute bottom-5 left-5 flex">
