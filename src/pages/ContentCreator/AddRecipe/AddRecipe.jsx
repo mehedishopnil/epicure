@@ -55,24 +55,25 @@ const AddRecipe = () => {
   };
 
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div className="max-w-screen-2xl mb-10 mx-auto">
       {/* About Section */}
       <h1 className="text-[#D9D9D9] text-3xl mb-5">Add Recipe</h1>
 
-      {/* Recipe Name */}
       <div className="grid grid-cols-2 justify-center gap-3 mb-4">
+        {/* Recipe Name */}
+      <div className="col-span-1 justify-center gap-3 mb-4">
         <div className="flex-1">
           <input
             type="text"
             placeholder="Recipe Name"
-            className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-800 placeholder-gray-300"
+            className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-4 placeholder-gray-300"
           />
         </div>
       </div>
 
       {/* Final Product Picture */}
-      <div className="grid grid-cols-2 justify-center gap-3 mb-4">
-        <div className="flex-1">
+      <div className="col-span-1 justify-center gap-3 mb-4">
+        <div className="flex-1 bg-gray-500 rounded-lg">
           <input
             type="file"
             placeholder="Final Product Picture"
@@ -81,8 +82,10 @@ const AddRecipe = () => {
         </div>
       </div>
 
+      </div>
+
       {/* Description */}
-      <div className="grid grid-cols-2 justify-center gap-3 mb-4">
+      <div className="w-full justify-center gap-3 mb-4">
         <div className="flex-1">
           <textarea
             placeholder="Description"
@@ -97,12 +100,12 @@ const AddRecipe = () => {
           <input
             type="text"
             placeholder="Ingredient"
-            className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-800 placeholder-gray-300"
+            className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-300 placeholder-gray-300"
           />
         </div>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 gap-2">
           {ingredientFields.map((field, index) => (
-            <div key={field.id} className="flex mb-2">
+            <div key={field.id} className="flex gap-2 mb-2">
               <input
                 type="text"
                 placeholder={`Ingredient Name`}
@@ -132,7 +135,7 @@ const AddRecipe = () => {
             </div>
           ))}
           <button onClick={handleAddIngredient}>
-            <IoMdAddCircle className="text-gray-800" />
+            <IoMdAddCircle className="text-gray-400" />
           </button>
         </div>
       </div>
@@ -142,7 +145,7 @@ const AddRecipe = () => {
         <div className="flex-1">
           <input
             type="text"
-            placeholder="Step"
+            placeholder="About"
             className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-800 placeholder-gray-300"
           />
         </div>
@@ -158,13 +161,13 @@ const AddRecipe = () => {
               />
               {index !== 0 && (
                 <button onClick={() => handleRemoveStep(index)}>
-                  <FaMinusCircle className="text-gray-800 ml-2" />
+                  <FaMinusCircle className="text-gray-400 ml-2" />
                 </button>
               )}
             </div>
           ))}
           <button onClick={handleAddStep}>
-            <IoMdAddCircle className="text-gray-800" />
+            <IoMdAddCircle className="text-gray-400" />
           </button>
         </div>
       </div>
@@ -176,9 +179,28 @@ const AddRecipe = () => {
             type="text"
             placeholder="Tags"
             className="w-full border border-gray-300 rounded-md py-2 px-4 bg-transparent text-gray-800 placeholder-gray-300"
-            value={tags}
-            onChange={handleTagsChange}
           />
+        </div>
+        <div className="grid grid-cols-1 gap-2">
+          {stepFields.map((field, index) => (
+            <div key={field.id} className="flex mb-2">
+              <input
+                type="text"
+                placeholder={`Step ${index + 1}`}
+                className="w-full border border-gray-300 rounded-md py-2 px-4 mb-2 bg-transparent text-gray-800 placeholder-gray-300"
+                value={field.value}
+                onChange={(e) => handleStepChange(index, e)}
+              />
+              {index !== 0 && (
+                <button onClick={() => handleRemoveStep(index)}>
+                  <FaMinusCircle className="text-gray-400 ml-2" />
+                </button>
+              )}
+            </div>
+          ))}
+          <button onClick={handleAddStep}>
+            <IoMdAddCircle className="text-gray-400" />
+          </button>
         </div>
       </div>
 
