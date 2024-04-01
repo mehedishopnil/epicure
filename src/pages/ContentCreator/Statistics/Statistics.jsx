@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaThumbsUp, FaEye, FaCalendarDay } from 'react-icons/fa';
 
 const Statistics = () => {
     // Dummy data for demonstration
@@ -24,23 +25,46 @@ const Statistics = () => {
     }, []);
 
     return (
-        <div>
-            <h1 className="text-[#D9D9D9] text-3xl mb-5">Statistics</h1>
-            <div className="mb-4">
-                <h2 className="text-[#D9D9D9] text-xl mb-2">Number of Likes:</h2>
-                <p className="text-[#D9D9D9]">{likes}</p>
-            </div>
-            <div className="mb-4">
-                <h2 className="text-[#D9D9D9] text-xl mb-2">Total Number of Views:</h2>
-                <p className="text-[#D9D9D9]">{totalViews}</p>
-            </div>
-            <div className="mb-4">
-                <h2 className="text-[#D9D9D9] text-xl mb-2">Number of New Views Today:</h2>
-                <p className="text-[#D9D9D9]">{newViewsToday}</p>
-            </div>
-            <div className="mb-4">
-                <h2 className="text-[#D9D9D9] text-xl mb-2">Number of New Likes Today:</h2>
-                <p className="text-[#D9D9D9]">{newLikesToday}</p>
+        <div className="overflow-y-auto max-h-[400px]  scrollbar-none">
+            <div className=" rounded-lg p-6 shadow-lg">
+                {/* Title */}
+                <h1 className="text-white text-3xl mb-5">Statistics</h1>
+
+                {/* Likes */}
+                <div className="flex items-center justify-between border border-gray-500 bg-[#272727] rounded-lg p-4 mb-4">
+                    <div className='flex gap-2'>
+                        <FaThumbsUp className="text-xl text-blue-500 mr-2" />
+                        <span className="text-xl text-white font-[poppins] font-semibold">Likes</span>
+                    </div>
+                    <span className="text-xl text-white font-[poppins] font-semibold">{likes}</span>
+                </div>
+
+                {/* Total Views */}
+                <div className="flex items-center justify-between border border-gray-500 bg-[#272727] rounded-lg p-4 mb-4">
+                    <div className='flex gap-2'>
+                        <FaEye className="text-xl text-yellow-500 mr-2" />
+                        <span className="text-xl text-white font-[poppins] font-semibold">Total Views</span>
+                    </div>
+                    <span className="text-xl text-white font-[poppins] font-semibold">{totalViews}</span>
+                </div>
+
+                {/* New Views Today */}
+                <div className="flex items-center justify-between border border-gray-500 bg-[#272727] rounded-lg p-4 mb-4">
+                    <div className='flex gap-2'>
+                        <FaCalendarDay className="text-xl text-green-500 mr-2" />
+                        <span className="text-xl text-white font-[poppins] font-semibold">New Views Today</span>
+                    </div>
+                    <span className="text-xl text-white font-[poppins] font-semibold">{newViewsToday}</span>
+                </div>
+
+                {/* New Likes Today */}
+                <div className="flex items-center justify-between border border-gray-500 bg-[#272727] rounded-lg p-4 mb-4">
+                    <div className='flex gap-2'>
+                        <FaThumbsUp className="text-xl text-red-500 mr-2" />
+                        <span className="text-xl text-white font-[poppins] font-semibold">New Likes Today</span>
+                    </div>
+                    <span className="text-xl text-white font-[poppins] font-semibold">{newLikesToday}</span>
+                </div>
             </div>
         </div>
     );

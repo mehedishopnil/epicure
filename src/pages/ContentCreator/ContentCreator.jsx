@@ -24,7 +24,7 @@ const ContentCreator = () => {
     }
   };
   return (
-    <div className="h-screen bg-[#1E1C1A]">
+    <div className="h-full rounded-lg bg-[#1E1C1A]">
       <div className="relative">
         <div
           className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
