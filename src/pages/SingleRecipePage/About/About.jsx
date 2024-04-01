@@ -1,7 +1,7 @@
 import Pasta_1 from "../../../assets/images/Pasta-1.png";
-import Pasta_2 from "../../../assets/images/Pasta-1.png";
-import Pasta_3 from "../../../assets/images/Pasta-1.png";
-import Pasta_4 from "../../../assets/images/Pasta-1.png";
+import Pasta_2 from "../../../assets/images/Pasta-2.png";
+import Pasta_3 from "../../../assets/images/Pasta-3.png";
+import Pasta_4 from "../../../assets/images/Pasta-4.png";
 
 const About = () => {
   return ( 
