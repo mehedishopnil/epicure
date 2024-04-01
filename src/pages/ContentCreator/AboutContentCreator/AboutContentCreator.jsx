@@ -14,7 +14,7 @@ const AboutContentCreator = () => {
   };
 
   return (
-    <div className="container mx-auto overflow-y-auto md:h-[400px]: lg:h-[500px] scrollbar-none">
+    <div className="container mx-auto max-h-[400px] overflow-y-auto scrollbar-none">
       {/* Conditional rendering based on showAddRecipe state */}
       {!showAddRecipe && (
         <>
@@ -35,30 +35,30 @@ const AboutContentCreator = () => {
             <div className="mt-5">
               <div className="flex justify-between items-center">
                 {/* My Recipes Heading */}
-                <h1 className="text-[#D9D9D9] text-xl ml-10 my-5">My Recipes</h1>
+                <h1 className="text-[#D9D9D9] text-xl ml-10 mt-5">My Recipes</h1>
                 {/* Add Recipe Button */}
                 <button onClick={handleAddRecipeClick}>
                   <IoMdAdd className="text-4xl text-white " />
                 </button>
               </div>
               {/* Recipes Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-5 mt-5">
+              <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-5 mt-5 mb-10">
                 {/* Recipe Cards */}
                 <div className="flex flex-col justify-center items-center text-white">
                   <img src={Pasta_1} alt="" className="w-8/12" />
-                  <p className="text-xl mt-2">PAD KAPAHO</p>
+                  <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
                   <img src={Pasta_2} alt="" className="w-8/12" />
-                  <p className="text-xl mt-2">PAD KAPAHO</p>
+                  <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
                   <img src={Pasta_3} alt="" className="w-8/12" />
-                  <p className="text-xl mt-2">PAD KAPAHO</p>
+                  <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
                   <img src={Pasta_4} alt="" className="w-8/12" />
-                  <p className="text-xl mt-2">PAD KAPAHO</p>
+                  <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
               </div>
             </div>

@@ -17,14 +17,15 @@ const ContentCreator = () => {
         return <Search />;
       case "Statistics":
         return <Statistics />;
-      case "Calender":
+      case "ContentCreator":
         return <ContentCreator />;
       default:
         return null;
     }
   };
+
   return (
-    <div className="h-full rounded-lg bg-[#1E1C1A]">
+    <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
       <div className="relative">
         <div
           className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
@@ -32,17 +33,16 @@ const ContentCreator = () => {
         >
           <div className="absolute bottom-5 left-5 flex">
             <h1 className="text-2xl lg:text-4xl text-white">Daniel Amit</h1>
-            
           </div>
-          
-          <Link ><FaEdit className="absolute text-3xl flex gap-5 right-5 top-5 lg:right-[5%] lg:bottom-[10%] text-white" /></Link>
-         
+          <Link>
+            <FaEdit className="absolute text-3xl flex gap-5 right-5 top-5 lg:right-[5%] lg:bottom-[10%] text-white" />
+          </Link>
         </div>
       </div>
-      <div>
+      <div className="overflow-y-auto h-full">
         {/* Filter menu */}
         <div className="flex flex-col items-center">
-          <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block ">
+          <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block">
             <div className="flex text-white gap-10 px-3 lg:px-0">
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
@@ -54,9 +54,7 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Search"
-                    ? "bg-[#BE6F50]"
-                    : "bg-[#272727]"
+                  activeFilter === "Search" ? "bg-[#BE6F50]" : "bg-[#272727]"
                 }`}
                 onClick={() => setActiveFilter("Search")}
               >
@@ -76,7 +74,7 @@ const ContentCreator = () => {
                 }`}
                 onClick={() => setActiveFilter("ContentCreator")}
               >
-                Calender
+                Calendar
               </button>
             </div>
           </div>
