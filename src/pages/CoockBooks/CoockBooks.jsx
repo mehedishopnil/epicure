@@ -23,75 +23,93 @@ const CoockBooks = () => {
           {/* Top 10 Section */}
           <div className="row-span-1  mb-4">
             <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-y-10  mt-4">
-              <Link to="/single_recipe">
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img1}
                   alt="Image 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] "
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img2}
                   alt="Image 2"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] "
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img3}
                   alt="Image 3"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] "
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img4}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] "
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+              
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
-              <Link to="/single_recipe">
+
+              <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img5}
                   alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px]"
                 />
+                <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
             </div>
           </div>
