@@ -23,7 +23,7 @@ const Home = () => {
           text-white text-lg px-10 rounded-lg lg:gap-10"
         >
           {/* Top 10 Section */}
-          <div className="row-span-1  mb-4">
+          <div className="row-span-1 flex flex-col items-start  mb-4">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>
             <div className="grid grid-cols-2 overflow-y-auto md:max-h-[40%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5  mt-4">
               <Link to="/single_recipe" className="flex flex-col items-center">
@@ -74,7 +74,7 @@ const Home = () => {
           </div>
 
           {/* Last Search Section */}
-          <div className="row-span-1 ">
+          <div className="row-span-1 flex flex-col items-start  mb-4">
             <h2 className="text-[30.67px] font-bold text-white">Last Search</h2>
             <div className="grid grid-cols-2 overflow-y-auto md:max-h-[40%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-5 mt-4">
   
