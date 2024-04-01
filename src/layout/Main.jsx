@@ -220,7 +220,7 @@ const Main = () => {
         </div>
 
         {/* Content */}
-        <div className="w-full h-full px-3 py-3 rounded-lg bg-[#424242]">
+        <div className="w-full h-full pr-3 py-3 rounded-lg bg-[#424242]">
           <Outlet />
         </div>
       </div>
