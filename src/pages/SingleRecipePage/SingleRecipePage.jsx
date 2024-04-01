@@ -21,7 +21,7 @@ const SingleRecipePage = () => {
       case "Premium":
         return <Premium />;
       default:
-        return null;
+        return '';
     }
   };
 

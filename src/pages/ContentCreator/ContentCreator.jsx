@@ -18,7 +18,7 @@ const ContentCreator = () => {
       case "Statistics":
         return <Statistics />;
       case "ContentCreator":
-        return <ContentCreator />;
+        // return <ContentCreator />;
       default:
         return null;
     }

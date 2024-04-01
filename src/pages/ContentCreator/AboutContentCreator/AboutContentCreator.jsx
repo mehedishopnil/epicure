@@ -14,7 +14,7 @@ const AboutContentCreator = () => {
   };
 
   return (
-    <div className="container mx-auto max-h-[400px] overflow-y-auto scrollbar-none">
+    <div className="container mx-auto max-h-[400px] lg:max-h-[450px]  overflow-y-auto scrollbar-none">
       {/* Conditional rendering based on showAddRecipe state */}
       {!showAddRecipe && (
         <>
@@ -32,7 +32,7 @@ const AboutContentCreator = () => {
             </p>
 
             {/* My Recipes Section */}
-            <div className="mt-5">
+            <div className="mt-5 mb-16">
               <div className="flex justify-between items-center">
                 {/* My Recipes Heading */}
                 <h1 className="text-[#D9D9D9] text-xl ml-10 mt-5">My Recipes</h1>
