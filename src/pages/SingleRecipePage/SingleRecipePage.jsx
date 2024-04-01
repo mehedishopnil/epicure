@@ -26,7 +26,7 @@ const SingleRecipePage = () => {
   };
 
   return (
-    <div className="h-screen bg-[#1E1C1A]">
+    <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
       <div className="relative">
         <div className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
           <div className="absolute bottom-5 left-5 flex">
@@ -42,11 +42,11 @@ const SingleRecipePage = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="overflow-y-auto">
         {/* Filter menu */}
         <div className="flex flex-col items-center">
           <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block ">
-            <div className="flex text-white gap-10 px-3 lg:px-0">
+            <div className="flex  text-white gap-10 px-3 lg:px-0">
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
                   activeFilter === "About" ? "bg-[#BE6F50]" : "bg-[#272727]"
