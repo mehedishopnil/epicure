@@ -16,7 +16,7 @@ const Steps = () => {
                     <p className="text-white font-[poppins] ">Boil water in a large pot. Add salt and pasta to the boiling water.</p>
                 </div>
                 <div className="col-span-2 rounded-lg p-2 bg-[#272727] flex items-center justify-center">
-                    <img src={Pasta_1} alt="Step 1" className="w-9/12"/>
+                    <img src={Pasta_1} alt="Step 1" className="w-9/12 xl:w-[30%]"/>
                 </div>
             </div>
 
@@ -28,7 +28,7 @@ const Steps = () => {
                     <p className="text-white font-[poppins] ">Cook pasta until al dente. Drain and set aside.</p>
                 </div>
                 <div className="col-span-2 rounded-lg p-2 bg-[#272727] flex items-center justify-center">
-                    <img src={Pasta_2} alt="Step 2" className="w-9/12"/>
+                    <img src={Pasta_2} alt="Step 2" className="w-9/12 xl:w-[30%]"/>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@ const Steps = () => {
                     <p className="text-white font-[poppins] ">In a pan, heat olive oil and sauté garlic until fragrant. Add chopped tomatoes and cook until soft.</p>
                 </div>
                 <div className="col-span-2 rounded-lg p-2 bg-[#272727] flex items-center justify-center">
-                    <img src={Pasta_3} alt="Step 3" className="w-9/12"/>
+                    <img src={Pasta_3} alt="Step 3" className="w-9/12 xl:w-[30%]"/>
                 </div>
             </div>
             
@@ -52,7 +52,7 @@ const Steps = () => {
                     <p className="text-white font-[poppins] ">Add cooked pasta to the tomato sauce. Toss well to coat. Serve hot with grated cheese and garnish with basil leaves.</p>
                 </div>
                 <div className="col-span-2 rounded-lg p-2 bg-[#272727] flex items-center justify-center">
-                    <img src={Pasta_4} alt="Step 4" className="w-9/12"/>
+                    <img src={Pasta_4} alt="Step 4" className="w-9/12 xl:w-[30%]"/>
                 </div>
             </div>
         </div>
