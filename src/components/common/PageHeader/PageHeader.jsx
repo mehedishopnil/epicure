@@ -2,7 +2,7 @@ import React from "react";
 
 const PageHeader = ({HeaderName}) => {
   return (
-    <div className="relative w-full h-[200px] lg:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
+    <div className="relative w-full  h-[100px] md-[150px] lg:h-[100px] xl:h-[200px] rounded-lg bg-gradient-to-b from-[#768895] mb-5">
       <h1 className="absolute bottom-[20%] left-[10%] sm:left-[4%]  md:left-[4%] lg:left-[4%] text-[32.67px] md:text-[42.67px] lg:text-[42.67px] font-bold text-white">
         {HeaderName}
       </h1>

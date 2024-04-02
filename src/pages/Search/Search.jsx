@@ -13,19 +13,19 @@ import PageHeader from "../../components/common/PageHeader/PageHeader";
 const Search = () => {
   return (
     <div className="w-full h-full rounded-lg">
-      <div className="grid grid-rows-10 h-full rounded-lg bg-[#1E1C1A]">
-        <div className="row-span-2">
+      <div className="grid md:grid-row-12 lg:grid-rows-10 h-full rounded-lg bg-[#1E1C1A]">
+        <div className="row-span-3 md:h-[150px]">
           <PageHeader HeaderName="Search" />
         </div>
 
-        <div className="row-span-8 ">
+        <div className="row-span-9  mt-5">
           {/* Search Bar */}
-          <div className="flex items-center justify-center mb-10 my-5">
+          <div className="flex items-center justify-center mb-5 lg:mb-5 ">
             <div className="flex items-center justify-center w-full h-[50px] rounded-lg px-3 relative">
               <input
                 type="text"
                 placeholder=""
-                className="w-full h-10 px-10 mx-5 py-2 rounded-lg bg-white outline-none"
+                className="w-full lg:h-5 xl:h-10 px-10 mx-5 py-2 rounded-lg bg-white outline-none"
               />
               <span className="absolute right-[8%] top-0 bottom-0 flex items-center px-2 text-gray-400">
                 Search
@@ -37,10 +37,10 @@ const Search = () => {
           </div>
 
           {/* This three section should be scrollable */}
-          <div className=" grid grid-rows-3 overflow-y-auto scrollbar-none sm:max-h-[90%] md:max-h-[76%] text-white text-lg px-10 gap-10 
+          <div className="flex flex-col overflow-y-auto scrollbar-none sm:max-h-[90%] md:max-h-[76%] text-white text-lg px-10 gap-10
           ">
             {/* tag group 1 */}
-            <div className="">
+            <div className=" ">
               <h2 className="text-[20px] font-bold text-white">tag group 1</h2>
               <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5  mt-4">
                 <img
@@ -72,7 +72,7 @@ const Search = () => {
             </div>
 
             {/* tag group 2 */}
-            <div className=" ">
+            <div className="">
               <h2 className="text-[20px] font-bold text-white">tag group 2</h2>
               <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
                 <img
