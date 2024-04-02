@@ -11,15 +11,15 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchCC = () => {
     return (
-        <div className="overflow-y-auto grid grid-cols-1 items-center lg:max-auto xl:max-w-screen-xl max-h-[400px]  scrollbar-none">
+        <div className="overflow-y-auto grid grid-cols-1 items-center lg:max-auto xl:max-w-screen-xl max-h-[400px] mb-10  scrollbar-none">
 
             {/* Search Bar */}
-          <div className="flex items-center justify-center mb-10 my-5">
+          <div className="flex items-center justify-center mb-5">
             <div className="flex items-center justify-center w-full h-[50px] rounded-lg px-3 relative">
               <input
                 type="text"
                 placeholder=""
-                className="w-full h-10 px-10 mx-5 py-2 rounded-lg bg-white outline-none"
+                className="w-full h-10 px-10 mx-5  rounded-lg bg-white outline-none"
               />
               <span className="absolute right-[12%] top-0 bottom-0 flex items-center px-2 text-gray-400">
                 Search

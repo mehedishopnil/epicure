@@ -29,7 +29,7 @@ const ContentCreator = () => {
     <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
       <div className="relative">
         <div
-          className="flex flex-col justify-center w-full h-[200px] lg:h-[260px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
+          className="flex flex-col justify-center w-full h-[200px] lg:h-[150px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
           style={{ backgroundImage: `url(${DanielAmit})` }}
         >
           <div className="absolute bottom-5 left-5 flex">
