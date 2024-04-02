@@ -19,18 +19,21 @@ const SignUp = () => {
   };
 
   return (
-    <div className=" h-full my-3 font-syne  grid grid-cols-2">
+    <div className="h-full rounded-lg  bg-[#1E1C1A]">
+      <div className=" font-syne  h-full rounded-lg lg:grid lg:grid-cols-2">
       {/* Left side: Logo and Tagline */}
-      <div className="flex flex-col justify-center gap-10 p-10 bg-[#BE6F50]">
-        <h1 className="text-[60px] text-white font-bold">Epicure</h1>
-        <h2 className="font-syne text-[45px] text-white">
-          Feast Your Senses Culinary Creators on Exclusive Hub
-        </h2>
+      <div className="flex flex-col justify-center md:h-[250px] lg:h-full lg:rounded-lg gap-10 p-10 bg-[#BE6F50]">
+      <h1 className="md:text-[35px] lg:text-[50px] xl:text-[60px] text-white font-bold">
+            Epicure
+          </h1>
+          <h2 className="font-syne lg:text-[35px] xl:text-[45px] text-white">
+            Feast Your Senses Culinary Creators on Exclusive Hub
+          </h2>
       </div>
 
       {/* Right side: Signup form */}
-      <div className="grid items-center bg-[#1F1D1C]">
-        <div className="max-w-md mx-auto mt-8 p-6">
+      <div className="grid items-center  md:h-[550px] lg:h-full lg:rounded-lg bg-[#1F1D1C]">
+        <div className="max-w-md mx-auto p-6">
           {/* Form title */}
           <h2 className="text-2xl text-white font-bold mb-4">Sign Up</h2>
           <form onSubmit={handleSubmit} className="">
@@ -112,6 +115,7 @@ const SignUp = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
