@@ -14,7 +14,7 @@ const AboutContentCreator = () => {
   };
 
   return (
-    <div className="container mx-auto max-h-[450px] lg:max-h-[300px] xl:max-h-[500px] mb-20  overflow-y-auto scrollbar-none">
+    <div className="container mx-auto max-h-[450px] lg:max-h-[300px] xl:max-h-[500px] overflow-y-auto scrollbar-none">
       {/* Conditional rendering based on showAddRecipe state */}
       {!showAddRecipe && (
         <>
