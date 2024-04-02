@@ -39,41 +39,41 @@ const Home = () => {
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={top10Img2}
+                  alt="Image 2"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Pasta White</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={top10Img3}
+                  alt="Image 3"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Pasta Red</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={top10Img4}
+                  alt="Image 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Pasta Green</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={top10Img5}
+                  alt="Image 5"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Pasta Yellow</h1>
                 </div>
               </Link>
 
@@ -89,51 +89,51 @@ const Home = () => {
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={lastSearch1}
+                  alt="Last Search 1"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Spaghetti</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={lastSearch2}
+                  alt="Last Search 2"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Lasagna</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={lastSearch3}
+                  alt="Last Search 3"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Fettuccine</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={lastSearch4}
+                  alt="Last Search 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Ravioli</h1>
                 </div>
               </Link>
             <Link to="/single_recipe" className="flex flex-col items-start">
                 <div className="flex flex-col items-center">
                 <img
-                  src={top10Img1}
-                  alt="Image 1"
+                  src={lastSearch4}
+                  alt="Last Search 4"
                   className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
                 />
-                <h1 className=" text-lg  mt-2">Pasta Rose</h1>
+                <h1 className=" text-lg  mt-2">Ravioli</h1>
                 </div>
               </Link>
             </div>
