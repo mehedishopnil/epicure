@@ -32,7 +32,7 @@ const Home = () => {
                 <img
                   src={top10Img1}
                   alt="Image 1"
-                  className="w-[103px] h-[98px] sm:w-[133px] sm:h-[128px] md:w-[133px] md:h-[128px] lg:w-[133px] lg:h-[128px] mr-4"
+                  className="w-[103px] h-[98px] sm:w-[123px] sm:h-[128px] md:w-[123px] md:h-[118px] lg:w-[123px] lg:h-[118px] mr-4"
                 />
                 <h1 className=" text-lg  mt-2">Pasta Rose</h1>
                 </div>

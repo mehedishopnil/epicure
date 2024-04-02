@@ -37,11 +37,12 @@ const Search = () => {
           </div>
 
           {/* This three section should be scrollable */}
-          <div className=" grid grid-rows-3 overflow-y-auto sm:max-h-[90%] md:max-h-[75%] text-white text-lg px-10 sm:gap-10 lg:gap-10">
+          <div className=" grid grid-rows-3 overflow-y-auto scrollbar-none sm:max-h-[90%] md:max-h-[76%] text-white text-lg px-10 gap-10 
+          ">
             {/* tag group 1 */}
-            <div className="row-span-1 ">
+            <div className="">
               <h2 className="text-[20px] font-bold text-white">tag group 1</h2>
-              <div className="grid grid-cols-2 overflow-x-auto scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800 sm:max-h-[60%] md:max-h-[70%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5  mt-4">
+              <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5  mt-4">
                 <img
                   src={top10Img1}
                   alt="Image 1"
@@ -71,9 +72,9 @@ const Search = () => {
             </div>
 
             {/* tag group 2 */}
-            <div className="row-span-1 ">
+            <div className=" ">
               <h2 className="text-[20px] font-bold text-white">tag group 2</h2>
-              <div className="grid grid-cols-2  overflow-y-auto scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800 sm:max-h-[60%] md:max-h-[70%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
                 <img
                   src={lastSearch1}
                   alt="Image 5"
@@ -103,9 +104,9 @@ const Search = () => {
             </div>
 
             {/* tag group 3 */}
-            <div className="row-span-3 ">
+            <div className="">
               <h2 className="text-[20px] font-bold text-white">tag group 3</h2>
-              <div className="grid grid-cols-2 overflow-y-auto scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800 sm:max-h-[60%] md:max-h-[50%] lg:max-h-[80%] sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
+              <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-5 gap-5 mt-4">
                 <img
                   src={lastSearch1}
                   alt="Image 5"

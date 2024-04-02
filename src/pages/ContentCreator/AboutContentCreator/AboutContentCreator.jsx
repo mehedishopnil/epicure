@@ -14,7 +14,7 @@ const AboutContentCreator = () => {
   };
 
   return (
-    <div className="container mx-auto max-h-[400px] lg:max-h-[450px]  overflow-y-auto scrollbar-none">
+    <div className="container mx-auto max-h-[450px] lg:max-h-[300px] xl:max-h-[500px] mb-20  overflow-y-auto scrollbar-none">
       {/* Conditional rendering based on showAddRecipe state */}
       {!showAddRecipe && (
         <>
@@ -42,22 +42,22 @@ const AboutContentCreator = () => {
                 </button>
               </div>
               {/* Recipes Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-5 mt-5 mb-10">
+              <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-5 mt-5 lg:mt-3 mb-10">
                 {/* Recipe Cards */}
                 <div className="flex flex-col justify-center items-center text-white">
-                  <img src={Pasta_1} alt="" className="w-8/12" />
+                  <img src={Pasta_1} alt="" className="w-8/12 xl:w-7/12" />
                   <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
-                  <img src={Pasta_2} alt="" className="w-8/12" />
+                  <img src={Pasta_2} alt="" className="w-8/12 xl:w-7/12" />
                   <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
-                  <img src={Pasta_3} alt="" className="w-8/12" />
+                  <img src={Pasta_3} alt="" className="w-8/12 xl:w-7/12" />
                   <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
                 <div className="flex flex-col justify-center items-center text-white">
-                  <img src={Pasta_4} alt="" className="w-8/12" />
+                  <img src={Pasta_4} alt="" className="w-8/12 xl:w-7/12" />
                   <p className="text-base mt-2">PAD KAPAHO</p>
                 </div>
               </div>
