@@ -5,6 +5,7 @@ import Statistics from "./Statistics/Statistics";
 import DanielAmit from "../../assets/images/DanielAmit.jpg";
 import { FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SearchCC from "./SearchCC/SearchCC";
 
 const ContentCreator = () => {
   const [activeFilter, setActiveFilter] = useState("About");
@@ -14,7 +15,7 @@ const ContentCreator = () => {
       case "About":
         return <About />;
       case "Search":
-        return <Search />;
+        return <SearchCC />;
       case "Statistics":
         return <Statistics />;
       case "ContentCreator":
