@@ -18,72 +18,74 @@ const Login = () => {
   };
 
   return (
-    <div className="w-full h-full my-3 font-syne  lg:grid lg:grid-cols-2 overflow-hidden">
-      {/* Left side: Logo and Tagline */}
-      <div className="flex flex-col justify-center md:h-[250px] lg:h-full gap-10 p-10 bg-[#BE6F50]">
-        <h1 className="md:text-[35px] lg:text-[50px] xl:text-[60px] text-white font-bold">
-          Epicure
-        </h1>
-        <h2 className="font-syne lg:text-[35px] xl:text-[45px] text-white">
-          Feast Your Senses Culinary Creators on Exclusive Hub
-        </h2>
-      </div>
+    <div className="h-full rounded-lg  bg-[#1E1C1A]">
+      <div className=" font-syne  h-full rounded-lg lg:grid lg:grid-cols-2 ">
+        {/* Left side: Logo and Tagline */}
+        <div className="flex flex-col justify-center md:h-[250px] lg:h-full lg:rounded-lg gap-10 p-10 bg-[#BE6F50]">
+          <h1 className="md:text-[35px] lg:text-[50px] xl:text-[60px] text-white font-bold">
+            Epicure
+          </h1>
+          <h2 className="font-syne lg:text-[35px] xl:text-[45px] text-white">
+            Feast Your Senses Culinary Creators on Exclusive Hub
+          </h2>
+        </div>
 
-      {/* Right side: Login form */}
-      <div className="grid items-center md:h-[550px] lg:h-full bg-[#1F1D1C]">
-        <div className="max-w-md mx-auto mt-8 p-6">
-          {/* Form title */}
-          <h2 className="text-2xl text-white font-bold mb-4">Log in</h2>
-          <form onSubmit={handleSubmit} className=" xl:w-[400px]">
-            {/* Email input */}
-            <div className="mb-4">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={email}
-                placeholder="Email"
-                onChange={(e) => setEmail(e.target.value)}
-                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
-                  email ? "text-white" : ""
-                }`}
-                required
-              />
-            </div>
-            {/* Password input */}
-            <div className="mb-4">
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={password}
-                placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
-                className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
-                  password ? "text-white" : ""
-                }`}
-                required
-              />
-            </div>
-            {/* Submit button */}
-            <button
-              type="submit"
-              className="w-full bg-[#8F8F8F] text-white py-2 px-4 rounded-md hover:bg-[#BE6F50] focus:outline-none focus:bg-blue-600"
-            >
-              Log in
+        {/* Right side: Login form */}
+        <div className="grid items-center  md:h-[550px] lg:h-full lg:rounded-lg bg-[#1F1D1C]">
+          <div className="max-w-md mx-auto p-6">
+            {/* Form title */}
+            <h2 className="text-2xl text-white font-bold mb-4">Log in</h2>
+            <form onSubmit={handleSubmit} className=" xl:w-[400px]">
+              {/* Email input */}
+              <div className="mb-4">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={email}
+                  placeholder="Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
+                    email ? "text-white" : ""
+                  }`}
+                  required
+                />
+              </div>
+              {/* Password input */}
+              <div className="mb-4">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value={password}
+                  placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  className={`mt-1 p-2 block w-full border border-gray-300 bg-[#8f8f8f00] rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${
+                    password ? "text-white" : ""
+                  }`}
+                  required
+                />
+              </div>
+              {/* Submit button */}
+              <button
+                type="submit"
+                className="w-full bg-[#8F8F8F] text-white py-2 px-4 rounded-md hover:bg-[#BE6F50] focus:outline-none focus:bg-blue-600"
+              >
+                Log in
+              </button>
+              {/* Link to signup page */}
+              <p className="text-white text-center mt-5">
+                Don't have an account?{" "}
+                <Link to="/signup">
+                  <span className="underline text-[#BE6F50]">Sign up</span>
+                </Link>{" "}
+              </p>
+            </form>
+            {/* Login with Google button */}
+            <button className="mt-10 w-full flex items-center justify-center text-white bg-[#BE6F50] py-2 px-4 rounded-full hover:bg-[#8F8F8F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              <FaGoogle className="mr-2" /> Log in with Google
             </button>
-            {/* Link to signup page */}
-            <p className="text-white text-center mt-5">
-              Don't have an account?{" "}
-              <Link to="/signup">
-                <span className="underline text-[#BE6F50]">Sign up</span>
-              </Link>{" "}
-            </p>
-          </form>
-          {/* Login with Google button */}
-          <button className="mt-10 w-full flex items-center justify-center text-white bg-[#BE6F50] py-2 px-4 rounded-full hover:bg-[#8F8F8F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            <FaGoogle className="mr-2" /> Log in with Google
-          </button>
+          </div>
         </div>
       </div>
     </div>
