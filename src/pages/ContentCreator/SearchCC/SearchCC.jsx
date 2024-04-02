@@ -11,7 +11,7 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchCC = () => {
     return (
-        <div className="overflow-y-auto grid grid-cols-1 items-center lg:max-auto xl:max-w-screen-xl max-h-[400px] mb-10  scrollbar-none">
+        <div className="overflow-y-auto grid grid-cols-1 items-center lg:max-auto xl:max-w-screen-xl max-h-[400px] scrollbar-none">
 
             {/* Search Bar */}
           <div className="flex items-center justify-center mb-5">

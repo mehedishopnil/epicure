@@ -40,7 +40,7 @@ const ContentCreator = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-y-auto h-full">
+      <div className="overflow-y-auto h-full lg:max-h-[400px] scrollbar-none">
         {/* Filter menu */}
         <div className="flex flex-col items-center">
           <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block">
