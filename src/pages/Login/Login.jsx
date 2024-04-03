@@ -35,7 +35,7 @@ const Login = () => {
           <div className="max-w-md mx-auto p-6">
             {/* Form title */}
             <h2 className="text-2xl text-white font-bold mb-4">Log in</h2>
-            <form onSubmit={handleSubmit} className=" xl:w-[400px]">
+            <form onSubmit={handleSubmit} className=" ">
               {/* Email input */}
               <div className="mb-4">
                 <input

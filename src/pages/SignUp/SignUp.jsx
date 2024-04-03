@@ -19,7 +19,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-full rounded-lg  bg-[#1E1C1A]">
+    <div className="w-full h-full rounded-lg  bg-[#1E1C1A]">
       <div className=" font-syne  h-full rounded-lg lg:grid lg:grid-cols-2">
       {/* Left side: Logo and Tagline */}
       <div className="flex flex-col justify-center md:h-[250px] lg:h-full lg:rounded-lg gap-10 p-10 bg-[#BE6F50]">

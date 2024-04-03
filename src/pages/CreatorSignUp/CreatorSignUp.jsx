@@ -33,10 +33,11 @@ const CreatorSignUp = () => {
 
       {/* Right side: Signup form */}
       <div className="grid items-center  md:h-[550px] lg:h-full lg:rounded-lg bg-[#1F1D1C]">
-        <div className="max-w-md mx-auto mt-8 p-6">
+        <div className="max-w-md mx-auto p-6">
           {/* Form title */}
-          <h2 className="text-2xl text-white font-bold mb-4">
-            Sign up as content creator
+          <h2 className=" text-2xl text-white font-bold mb-4">
+            Sign up as 
+            <br></br>content creator
           </h2>
           <form onSubmit={handleSubmit} className="">
             {/* Name input */}
