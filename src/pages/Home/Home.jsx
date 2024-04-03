@@ -18,9 +18,9 @@ const Home = () => {
           <PageHeader HeaderName="Home" />
           </div>
         {/* make the section scrollable*/}
-        <div className="overflow-y-auto scrollbar-none">
+        <div className="row-span-8 overflow-y-auto scrollbar-none">
         <div
-          className=" grid grid-rows-2 row-span-8 bg-[#1E1C1A]
+          className=" grid grid-rows-2  bg-[#1E1C1A]
           text-white text-lg px-10 rounded-lg md:gap-5 lg:gap-10"
         >
           {/* Top 10 Section */}

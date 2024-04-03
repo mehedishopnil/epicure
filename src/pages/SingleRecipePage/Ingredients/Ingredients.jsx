@@ -4,7 +4,7 @@ import ingredientImg2 from "../../../assets/images/ingredient-img2.png";
 
 const Ingredients = () => {
     return (
-        <div>
+        <div className="mb-5">
             <h2 className="text-[30.67px] font-bold text-[#D9D9D9]">Ingredients</h2>
 
             <div className="flex flex-col gap-3 mt-5">

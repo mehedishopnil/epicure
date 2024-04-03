@@ -12,16 +12,16 @@ import PageHeader from "../../components/common/PageHeader/PageHeader";
 
 const CoockBooks = () => {
     return (
-        <div className="w-full h-screen rounded-lg">
-      <div className="h-full rounded-lg bg-[#1E1C1A]">
+        <div className="w-full h-full rounded-lg">
+      <div className="h-full grid grid-row-10 rounded-lg bg-[#1E1C1A]">
+        <div className="row-span-2">
         <PageHeader HeaderName="Book-1" />
+        </div>
+
         {/* This two section should be scrollable */}
         <div
-          className=" grid grid-rows-2 
-          text-white text-lg px-10 lg:gap-10"
-        >
-          {/* Top 10 Section */}
-          <div className="row-span-1  mb-4">
+          className="row-span-8 overflow-y-auto scrollbar-none"
+        >     
             <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-y-10  mt-4">
               <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
@@ -112,7 +112,6 @@ const CoockBooks = () => {
                 <h1 className="text-center text-lg mt-2">Pasta Rose</h1>
               </Link>
             </div>
-          </div>
         </div>
       </div>
     </div>

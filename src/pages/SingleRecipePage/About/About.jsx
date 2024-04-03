@@ -5,7 +5,7 @@ import Pasta_4 from "../../../assets/images/Pasta-4.png";
 
 const About = () => {
   return ( 
-      <div className="overflow-y-auto mb-10 lg:max-h-[300px] scrollbar-none">
+      <div className="mb-5">
         <h1 className="text-[#D9D9D9] text-3xl mb-5">About</h1>
         <div className="">
           <p className="text-[14px] sm:text-[18px] md:text-[18px] lg:text-[18px] p-3 rounded-lg text-[#666666] bg-[#272727] ">
