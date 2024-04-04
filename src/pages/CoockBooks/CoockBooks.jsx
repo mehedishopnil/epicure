@@ -22,7 +22,7 @@ const CoockBooks = () => {
         <div
           className="row-span-8 overflow-y-auto scrollbar-none"
         >     
-            <div className="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-y-10  mt-4">
+            <div className="grid grid-cols-2 text-white  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-y-10  mt-4">
               <Link to="/single_recipe" className="flex flex-col items-center">
                 <img
                   src={top10Img1}

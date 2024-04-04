@@ -40,6 +40,14 @@ const Ingredients = () => {
                     <p className="text-[#A9A9A9] font-[poppins] text-sm">200g</p>
                 </div>
 
+                <div className="w-10/12 sm:w-2/3 md:w-1/2 lg:w-1/2 flex justify-between items-center rounded-xl bg-[#272727] px-4 py-2">
+                    <div className="flex items-center gap-2">
+                    <img src={ingredientImg2} alt="" />
+                    <p className="text-[#666666] font-[poppins]">Butter</p>
+                    </div>
+                    <p className="text-[#A9A9A9] font-[poppins] text-sm">200g</p>
+                </div>
+
             </div>
         </div>
     );

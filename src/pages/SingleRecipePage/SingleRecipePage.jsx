@@ -43,7 +43,7 @@ const SingleRecipePage = () => {
           </div>
         </div>
 
-        <div className="overflow-y-auto max-h-[350px] scrollbar-none mb-10">
+        <div className="overflow-y-auto max-h-[350px] xl:max-h-full scrollbar-none mb-10">
         <div className="h-full ">
         {/* Filter menu */}
         <div className="flex flex-col items-center">
