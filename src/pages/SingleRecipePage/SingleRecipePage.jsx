@@ -58,21 +58,21 @@ const SingleRecipePage = () => {
   return (
     <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden flex flex-col">
       {/* Header Part */}
-      <div className="relative flex justify-between items-center p-5 bg-gradient-to-b from-[#768895]">
-        <div className="flex items-center">
+      <div className="relative flex justify-between items-center h-[200px] xl:h-[250px] px-5 bg-gradient-to-b from-[#768895]">
+        <div className="absolute bottom-5 left-10 flex items-center">
           <img src={pastaImg} alt="" className="w-20 h-20 lg:w-30 lg:h-30"/>
           <div className="flex flex-col justify-center ml-4">
             <h1 className="text-2xl lg:text-4xl text-white">Pasta Rose</h1>
             <p className="text-lg lg:text-xl text-[#8F8F8F]">Daniel Amit</p>
           </div>
         </div>
-        <div className="flex gap-5 text-white">
+        <div className="absolute bottom-5 right-10 flex gap-5 text-white">
           <FiDownload className="text-3xl" />
           <AiFillLike className="text-3xl" />
         </div>
       </div>
 
-      <div className="overflow-y-auto flex-grow">
+      <div className="overflow-y-auto flex-grow mt-5">
         {/* Filter menu */}
         <div className="flex flex-col items-center">
           <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block ">
