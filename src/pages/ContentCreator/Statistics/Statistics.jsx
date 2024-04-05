@@ -25,7 +25,7 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div className="overflow-y-auto max-h-96 mb-10">
+    <div className="overflow-y-auto xl:max-w-lg max-h-96 mb-24">
       <div className="h-full rounded-lg shadow-lg">
         {/* Title */}
         <h1 className="text-white text-3xl mb-5">Statistics</h1>

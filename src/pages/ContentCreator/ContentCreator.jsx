@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import About from "./AboutContentCreator/AboutContentCreator";
 import Search from "../Search/Search";
 import Statistics from "./Statistics/Statistics";
@@ -9,6 +9,24 @@ import SearchCC from "./SearchCC/SearchCC";
 
 const ContentCreator = () => {
   const [activeFilter, setActiveFilter] = useState("About");
+  const [containerHeight, setContainerHeight] = useState(0);
+
+  useEffect(() => {
+    // Function to update container height based on viewport height
+    const updateContainerHeight = () => {
+      const windowHeight = window.innerHeight;
+      const filterMenuHeight = document.getElementById("filter-menu")?.offsetHeight || 0;
+      const newContainerHeight = windowHeight - filterMenuHeight;
+      setContainerHeight(newContainerHeight);
+    };
+
+    // Call the function initially and add event listener for window resize
+    updateContainerHeight();
+    window.addEventListener("resize", updateContainerHeight);
+
+    // Cleanup function to remove event listener on unmount
+    return () => window.removeEventListener("resize", updateContainerHeight);
+  }, []);
 
   const renderComponent = () => {
     switch (activeFilter) {
@@ -40,9 +58,9 @@ const ContentCreator = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-y-auto h-full lg:max-h-[400px] xl:max-h-[550px] 2xl:max-h-[700px] scrollbar-none">
+      <div className="overflow-y-auto" style={{ height: containerHeight }}>
         {/* Filter menu */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center" id="filter-menu">
           <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block">
             <div className="flex text-white gap-10 px-3 lg:px-0">
               <button
