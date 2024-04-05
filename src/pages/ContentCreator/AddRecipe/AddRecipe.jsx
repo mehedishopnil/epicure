@@ -72,7 +72,7 @@ const AddRecipe = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl lg:max-w-screen-lg mb-14 mx-auto">
+    <div className="max-w-screen-2xl lg:max-w-screen-lg mb-20 mx-auto">
       {/* About Section */}
       <h1 className="text-[#D9D9D9] text-3xl mb-5">Add Recipe</h1>
 

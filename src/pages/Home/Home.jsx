@@ -21,7 +21,7 @@ const Home = () => {
         <div className="row-span-8 overflow-y-auto scrollbar-none">
           <div
             className=" grid grid-rows-2  bg-[#1E1C1A]
-            text-white text-lg px-10 rounded-lg md:gap-5 lg:gap-10"
+            text-white text-lg px-10 rounded-lg md:gap-5 lg:gap-5"
           >
           {/* Top 10 Section */}
           <div className=" row-span-1 grid grid-cols-1 justify-start   mb-4">

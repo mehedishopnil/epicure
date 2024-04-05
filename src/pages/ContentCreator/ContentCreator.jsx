@@ -6,8 +6,7 @@ import DanielAmit from "../../assets/images/DanielAmit.jpg";
 import { FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SearchCC from "./SearchCC/SearchCC";
-import "./ContentCreator.css"; 
-
+import "./ContentCreator.css";
 
 const ContentCreator = () => {
   const [activeFilter, setActiveFilter] = useState("About");
@@ -40,14 +39,14 @@ const ContentCreator = () => {
       case "Statistics":
         return <Statistics />;
       case "ContentCreator":
-        // return <ContentCreator />;
+      // return <ContentCreator />;
       default:
         return null;
     }
   };
 
   return (
-    <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
+    <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden pb-10">
       <div className="relative">
         <div
           className="flex flex-col justify-center w-full h-[150px] lg:h-[200px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
@@ -61,8 +60,12 @@ const ContentCreator = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-y-auto scrollbar-hidden" style={{ height: containerHeight }}>
-        {/* Filter menu */}
+
+      {/* Filter menu */}
+      <div
+        className="overflow-y-auto scrollbar-hidden py-8"
+        style={{ height: containerHeight }}
+      >
         <div className="flex flex-col items-center " id="filter-menu">
           <div className="overflow-x-auto max-w-[80%] lg:block">
             <div className="flex text-white gap-10 px-3 lg:px-0">
@@ -84,7 +87,9 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "Statistics" ? "bg-[#BE6F50]" : "bg-[#272727]"
+                  activeFilter === "Statistics"
+                    ? "bg-[#BE6F50]"
+                    : "bg-[#272727]"
                 }`}
                 onClick={() => setActiveFilter("Statistics")}
               >
@@ -92,7 +97,9 @@ const ContentCreator = () => {
               </button>
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${
-                  activeFilter === "ContentCreator" ? "bg-[#BE6F50]" : "bg-[#272727]"
+                  activeFilter === "ContentCreator"
+                    ? "bg-[#BE6F50]"
+                    : "bg-[#272727]"
                 }`}
                 onClick={() => setActiveFilter("ContentCreator")}
               >
