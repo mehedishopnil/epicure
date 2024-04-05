@@ -63,7 +63,7 @@ const ContentCreator = () => {
       </div>
       <div className="overflow-y-auto scrollbar-hidden" style={{ height: containerHeight }}>
         {/* Filter menu */}
-        <div className="flex flex-col items-center" id="filter-menu">
+        <div className="flex flex-col items-center " id="filter-menu">
           <div className="overflow-x-auto max-w-[80%] lg:block">
             <div className="flex text-white gap-10 px-3 lg:px-0">
               <button
