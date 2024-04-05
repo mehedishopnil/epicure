@@ -1,0 +1,8 @@
+.scrollbar-visible::-webkit-scrollbar {
+    display: block;
+  }
+  
+  .scrollbar-invisible::-webkit-scrollbar {
+    display: none;
+  }
+  

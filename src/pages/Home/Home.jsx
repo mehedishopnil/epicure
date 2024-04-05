@@ -16,13 +16,13 @@ const Home = () => {
       <div className="h-full grid grid-row-10 rounded-lg bg-[#1E1C1A]">
         <div className="row-span-2">
           <PageHeader HeaderName="Home" />
-          </div>
+        </div>
         {/* make the section scrollable*/}
         <div className="row-span-8 overflow-y-auto scrollbar-none">
-        <div
-          className=" grid grid-rows-2  bg-[#1E1C1A]
-          text-white text-lg px-10 rounded-lg md:gap-5 lg:gap-10"
-        >
+          <div
+            className=" grid grid-rows-2  bg-[#1E1C1A]
+            text-white text-lg px-10 rounded-lg md:gap-5 lg:gap-10"
+          >
           {/* Top 10 Section */}
           <div className=" row-span-1 grid grid-cols-1 justify-start   mb-4">
             <h2 className="text-[30.67px] font-bold text-white">Top 10</h2>

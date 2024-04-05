@@ -6,6 +6,8 @@ import DanielAmit from "../../assets/images/DanielAmit.jpg";
 import { FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SearchCC from "./SearchCC/SearchCC";
+import "./ContentCreator.css"; 
+
 
 const ContentCreator = () => {
   const [activeFilter, setActiveFilter] = useState("About");
@@ -15,7 +17,8 @@ const ContentCreator = () => {
     // Function to update container height based on viewport height
     const updateContainerHeight = () => {
       const windowHeight = window.innerHeight;
-      const filterMenuHeight = document.getElementById("filter-menu")?.offsetHeight || 0;
+      const filterMenuHeight =
+        document.getElementById("filter-menu")?.offsetHeight || 0;
       const newContainerHeight = windowHeight - filterMenuHeight;
       setContainerHeight(newContainerHeight);
     };
@@ -47,7 +50,7 @@ const ContentCreator = () => {
     <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden">
       <div className="relative">
         <div
-          className="flex flex-col justify-center w-full h-[200px] lg:h-[150px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
+          className="flex flex-col justify-center w-full h-[150px] lg:h-[200px] rounded-lg bg-center bg-no-repeat bg-cover mb-5"
           style={{ backgroundImage: `url(${DanielAmit})` }}
         >
           <div className="absolute bottom-5 left-5 flex">
@@ -58,10 +61,10 @@ const ContentCreator = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-y-auto" style={{ height: containerHeight }}>
+      <div className="overflow-y-auto scrollbar-hidden" style={{ height: containerHeight }}>
         {/* Filter menu */}
         <div className="flex flex-col items-center" id="filter-menu">
-          <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block">
+          <div className="overflow-x-auto max-w-[80%] lg:block">
             <div className="flex text-white gap-10 px-3 lg:px-0">
               <button
                 className={`px-3 lg:px-5 py-2 rounded-full ${

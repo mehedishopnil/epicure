@@ -6,11 +6,12 @@ import About from "./About/About";
 import Ingredients from "./Ingredients/Ingredients";
 import Steps from "./Steps/Steps";
 import Premium from "./Premium/Premium";
+import './SingleRecipePage.css';
 
 const SingleRecipePage = () => {
   const [activeFilter, setActiveFilter] = useState("About");
   const [containerHeight, setContainerHeight] = useState(0);
-  const [sidebarVisible, setSidebarVisible] = useState(true);
+  const [scrollbarVisible, setScrollbarVisible] = useState(true);
 
   useEffect(() => {
     const updateContainerHeight = () => {
@@ -21,7 +22,7 @@ const SingleRecipePage = () => {
     updateContainerHeight();
     window.addEventListener("resize", updateContainerHeight);
 
-    // Listen for scroll event to hide sidebar
+    // Listen for scroll event to hide scrollbar
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -31,12 +32,12 @@ const SingleRecipePage = () => {
   }, []);
 
   const handleScroll = () => {
-    // If user scrolls down, hide the sidebar
+    // If user scrolls down, hide the scrollbar
     if (window.scrollY > 0) {
-      setSidebarVisible(false);
+      setScrollbarVisible(false);
     } else {
-      // If user scrolls to the top, show the sidebar
-      setSidebarVisible(true);
+      // If user scrolls to the top, show the scrollbar
+      setScrollbarVisible(true);
     }
   };
 
@@ -72,7 +73,7 @@ const SingleRecipePage = () => {
         </div>
       </div>
 
-      <div className="overflow-y-auto flex-grow mt-5">
+      <div className={`overflow-y-auto flex-grow mt-5 ${scrollbarVisible ? 'scrollbar-visible' : 'scrollbar-invisible'}`}>
         {/* Filter menu */}
         <div className="flex flex-col items-center">
           <div className="overflow-x-auto max-w-[80%] scrollbar-none lg:block ">
@@ -119,12 +120,6 @@ const SingleRecipePage = () => {
           {renderComponent()}
         </div>
       </div>
-      {/* Add conditional rendering for the sidebar */}
-      {sidebarVisible && (
-        <div className="sidebar">
-          {/* Your sidebar content */}
-        </div>
-      )}
     </div>
   );
 };
