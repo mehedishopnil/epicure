@@ -59,7 +59,8 @@ const SingleRecipePage = () => {
   return (
     <div className="h-full rounded-lg bg-[#1E1C1A] overflow-hidden flex flex-col">
       {/* Header Part */}
-      <div className="relative flex justify-between items-center h-[200px] xl:h-[250px] px-5 bg-gradient-to-b from-[#768895]">
+      <div>
+      <div className="relative flex justify-between items-center h-[200px]  px-5 bg-gradient-to-b from-[#768895]">
         <div className="absolute bottom-5 left-10 flex items-center">
           <img src={pastaImg} alt="" className="w-20 h-20 lg:w-30 lg:h-30"/>
           <div className="flex flex-col justify-center ml-4">
@@ -71,6 +72,7 @@ const SingleRecipePage = () => {
           <FiDownload className="text-3xl" />
           <AiFillLike className="text-3xl" />
         </div>
+      </div>
       </div>
 
       <div className={`overflow-y-auto flex-grow mt-5 ${scrollbarVisible ? 'scrollbar-visible' : 'scrollbar-invisible'}`}>

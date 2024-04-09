@@ -31,13 +31,14 @@ const Main = () => {
 
             {/* First section with logo */}
             <div className="row-span-3   bg-[#1E1C1A] rounded-lg py-3 px-4">
-             <div className="h-full overflow-y-auto scrollbar-none">
+             <div className="h-full ">
                {/* Logo */}
                <div className="flex items-center mb-2">
                 <h1 className="text-[#BE6F50] text-[22px]">Epicure</h1>
               </div>
 
-              {/* Sidebar Links */}
+              <div className="overflow-y-scroll max-h-[70%]  scrollbar-none">
+                {/* Sidebar Links */}
               <Link to="/">
                 <div className="flex items-center px-2">
                   <FaHome className="w-5 h-5 mr-2 text-[#BE6F50]" />
@@ -85,6 +86,7 @@ const Main = () => {
                   </div>
                 )}
               </div>
+              </div>
              </div>
             </div>
 
@@ -105,7 +107,7 @@ const Main = () => {
 
               {/* Scrollable Container for Cookbooks */}
 
-              <div className="overflow-y-scroll max-h-[70%]  scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-800">
+              <div className="overflow-y-scroll max-h-[70%]  scrollbar-none ">
                 <div className="flex flex-col gap-3">
                   <Link
                     to="/cook_books"
