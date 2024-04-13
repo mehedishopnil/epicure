@@ -18,7 +18,14 @@ const Login = () => {
   return (
     <div className="h-full rounded-lg bg-[#1E1C1A]">
       <div className="font-syne h-full rounded-lg lg:grid lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:h-[250px] lg:h-full lg:rounded-lg gap-10 p-10 bg-[#BE6F50]">
+       
+      <div className="relative flex flex-col justify-center md:h-[250px] lg:h-full lg:rounded-lg gap-10 p-10 bg-[#BE6F50] overflow-hidden">
+          <div className="absolute -top-5 -left-5 w-52 h-52 rounded-full bg-[#F6C388] filter blur-2xl opacity-30 lg:opacity-50 z-10 overflow-hidden"></div>
+
+          <div className="absolute -bottom-10 -left-5 w-64 h-52 rounded-full bg-[#F6C388] filter blur-2xl opacity-30 lg:opacity-50 z-10 overflow-hidden"></div>
+
+          <div className="absolute -bottom-5 -right-5 w-52 h-96 rounded-full bg-[#F6C388] filter blur-2xl opacity-30 lg:opacity-50 z-10 overflow-hidden"></div>
+
           <h1 className="md:text-[35px] lg:text-[50px] xl:text-[60px] text-white font-bold">
             Epicure
           </h1>
@@ -26,6 +33,7 @@ const Login = () => {
             Feast Your Senses Culinary Creators on Exclusive Hub
           </h2>
         </div>
+
         <div className="grid items-center md:h-[550px] lg:h-full lg:rounded-lg bg-[#1F1D1C]">
           <div className="max-w-md mx-auto p-6">
             <h2 className="text-2xl text-white font-bold mb-4">Log in</h2>
@@ -44,6 +52,7 @@ const Login = () => {
                   required
                 />
               </div>
+
               <div className="mb-4 relative">
                 <input
                   type={showPassword ? "text" : "password"} // Toggle input type based on showPassword state
